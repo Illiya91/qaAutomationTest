@@ -3,7 +3,6 @@ public class HomeTask6{
                 final int a = 1000;
                 final int a = 500;
                 System.out.println(a);
-                System.out.println(a);
         }
 }
 

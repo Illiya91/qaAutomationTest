@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d75180a2-5140-4e49-a075-22e159ba6117" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HomeTask3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HomeTask3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HomeTask6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HomeTask6.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +40,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -46,23 +49,16 @@
       <recent name="C:\Users\Kravchenko Illiya\IdeaProjects\TestAutomation\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.HomeTask6">
-    <configuration name="HomeTask1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="HomeTask1" />
-      <module name="TestAutomation" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HomeTask2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="HomeTask2" />
-      <module name="TestAutomation" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.HomeTask5">
     <configuration name="HomeTask3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="HomeTask3" />
+      <module name="TestAutomation" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HomeTask5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="HomeTask5" />
       <module name="TestAutomation" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -75,12 +71,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="HomeTask7" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="HomeTask7" />
+      <module name="TestAutomation" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HomeTask8" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="HomeTask8" />
+      <module name="TestAutomation" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.HomeTask5" />
+        <item itemvalue="Application.HomeTask8" />
+        <item itemvalue="Application.HomeTask7" />
         <item itemvalue="Application.HomeTask6" />
         <item itemvalue="Application.HomeTask3" />
-        <item itemvalue="Application.HomeTask2" />
-        <item itemvalue="Application.HomeTask1" />
       </list>
     </recent_temporary>
   </component>
@@ -105,5 +116,20 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/HomeTask6.java</url>
+          <line>1</line>
+          <properties class="HomeTask6" method="main">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

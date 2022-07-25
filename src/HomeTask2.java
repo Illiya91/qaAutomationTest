@@ -3,7 +3,7 @@
 // Byte //Short // int // long  // char // float //  double // boolean // boolean
 public class HomeTask2 {
     public static void main(String[] args) {
-        byte sizeByte = 100;
+        byte sizeByte = 10;
         System.out.println(sizeByte + "min-128  max 127");
         short sizeShort = 10000;
         System.out.println(sizeShort + "min-32768  max 32767");

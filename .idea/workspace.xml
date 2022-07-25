@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d75180a2-5140-4e49-a075-22e159ba6117" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/HomeTask1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -26,6 +25,9 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2CGlfbg7UXz2GTzfdxolO7Wg0gY" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />

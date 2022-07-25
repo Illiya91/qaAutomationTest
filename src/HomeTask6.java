@@ -1,7 +1,7 @@
 public class HomeTask6{
         public static void main(String[] args) {
                 final int a = 1000;
-                final int a = 400;
+                final int a = 500;
                 System.out.println(a);
                 System.out.println(a);
         }

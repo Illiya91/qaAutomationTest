@@ -1,3 +1,5 @@
+package Lesson1;
+
 //Write a program which creates and initializes all primitive data types.
 //   _Remark: There are 8 primitive data types.
 // Byte //Short // int // long  // char // float //  double // boolean // boolean

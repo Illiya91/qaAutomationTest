@@ -1,3 +1,5 @@
+package Lesson1;
+
 public class HomeTask8 {
     public static void main(String[] args) {
         double[] numbers = {2, 5, 3, 6, 12};

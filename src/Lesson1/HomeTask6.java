@@ -1,3 +1,5 @@
+package Lesson1;
+
 public class HomeTask6{
         public static void main(String[] args) {
                 final int A = 1000;

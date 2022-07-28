@@ -1,3 +1,5 @@
+package Lesson1;
+
 public class HomeTask5 {
     public static void main(String[] args) {
         char h = 72;

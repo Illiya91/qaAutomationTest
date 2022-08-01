@@ -5,19 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d75180a2-5140-4e49-a075-22e159ba6117" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../untitled/untitled.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../untitled1/untitled1.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../untitled2/untitled2.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TestAutomation/HomeTask1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TestAutomation/HomeTask2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TestAutomation/HomeTask3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TestAutomation/HomeTask5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TestAutomation/HomeTask7.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TestAutomation/HomeTask8.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Lesson1/HomeTask3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lesson1/HomeTask3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Lesson1/HomeTask6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lesson1/HomeTask6.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TestAutomation/Lesson2/HomeTask9.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TestAutomation/Lesson2/HomeTask9.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Lesson2/HomeTask9.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lesson2/HomeTask9.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

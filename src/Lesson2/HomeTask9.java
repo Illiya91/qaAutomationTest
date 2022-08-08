@@ -5,8 +5,6 @@ public class HomeTask9 {
         int[] array = new int[15];
         for (int i = 0; i < array.length; i++) {
             array[i] = (int) ((Math.random() * 30));
-
-
         }
         for (int out = array.length - 1; out >= 1; out--) {  //Внешний цикл
             for (int in = 0; in < out; in++) {       //Внутренний цикл

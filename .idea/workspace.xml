@@ -9,17 +9,6 @@
       <change afterPath="$PROJECT_DIR$/../untitled1/untitled1.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../untitled2/untitled2.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TestAutomation/HomeTask2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TestAutomation/Lesson3/HomeTask1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TestAutomation/Lesson3/HomeTask1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TestAutomation/Lesson3/HomeTask3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TestAutomation/Lesson3/HomeTask3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TestAutomation/Lesson3/HomeTask4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TestAutomation/Lesson3/HomeTask4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TestAutomation/Lesson3/HomeTask5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TestAutomation/Lesson3/HomeTask5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TestAutomation/Lesson3/HomeTask6.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TestAutomation/Lesson3/HomeTask6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TestAutomation/Lesson3/HomeTask7.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TestAutomation/Lesson3/HomeTask7.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TestAutomation/Lesson3/HomeTask8.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TestAutomation/Lesson3/HomeTask8.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Lesson3/HomeTask5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lesson3/HomeTask5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Lesson3/HomeTask6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lesson3/HomeTask6.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Lesson3/HomeTask7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lesson3/HomeTask7.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +57,7 @@
       <recent name="C:\Users\Kravchenko Illiya\IdeaProjects\TestAutomation\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Wheel">
+  <component name="RunManager" selected="Application.TestClass">
     <configuration name="Boxer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Lesson4.Boxer" />
       <module name="TestAutomation" />
@@ -108,8 +97,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Human1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Lesson4.Human1" />
+    <configuration name="TestClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Lesson4.TestClass" />
       <module name="TestAutomation" />
       <extension name="coverage">
         <pattern>
@@ -136,11 +125,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestClass" />
+        <item itemvalue="Application.HomeTask5" />
         <item itemvalue="Application.Wheel" />
         <item itemvalue="Application.Car" />
         <item itemvalue="Application.Boxer" />
-        <item itemvalue="Application.HomeTask5" />
-        <item itemvalue="Application.Human1" />
       </list>
     </recent_temporary>
   </component>

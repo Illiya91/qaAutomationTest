@@ -6,13 +6,18 @@
 package Lesson3;
 
 public class HomeTask6 {
-    public static void main(String[] args){
-        String a = "john_smith@example.com";
-        int index = a.indexOf("@");
-        String c = a.substring(0,index);
-        System.out.println("Імя "+":"+ c);
-       String b = a.substring(index+1, a.length());
-       System.out.println("Назва домену "+":"+ b);
+    public static void main(String[] args) {
+        String email = "john_smith@example.com";
+        int index = email.indexOf("@");
+        String name = email.substring(0, index);
+        String domain = email.substring(index + 1, email.length());
 
+        String[] splitedName = name.split("_");
+        String firstName = splitedName[0];
+        String lastName = splitedName[1];
+        firstName = firstName.substring(0,1).toUpperCase()+firstName.substring(1);
+        lastName = lastName.substring(0,1).toUpperCase()+lastName.substring(1);
+        System.out.println("// login  = : "  + firstName + " " + lastName );
+        System.out.println("// domain = : " +  domain);
     }
 }

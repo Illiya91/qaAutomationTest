@@ -7,7 +7,8 @@ public class HomeTask5 {
     public static void main(String[] args){
         String a = "hop";
         String b = "hello";
-
-System.out.println(a+ " " + b + " "+ a);
+        if (b != a) {
+            System.out.println(a + " " + b + " " + a);
+        }
     }
 }

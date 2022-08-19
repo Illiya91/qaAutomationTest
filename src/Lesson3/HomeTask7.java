@@ -10,12 +10,11 @@ package Lesson3;
 public class HomeTask7 {
     public static void main(String[] args){
         String name = "Den, John, Will, Kate, Adam, Robin";
-        for (String s : name.split("[, \\s]")) {
+        for (String s : name.split(", ")) {
             System.out.println(s);
         }
     }
 }
-
 
 
 

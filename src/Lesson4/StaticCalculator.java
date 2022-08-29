@@ -1,3 +1,4 @@
+//
 package Lesson4;
 
 public class StaticCalculator {
@@ -14,7 +15,7 @@ public class StaticCalculator {
     }
 
     public double Calculation() {
-    double result;
+    double result = 0;
         switch (operation) {
             case "+":
                 result = firstValue + secondValue;
@@ -28,9 +29,7 @@ public class StaticCalculator {
             case "/":
                 result = firstValue / secondValue;
                 break;
-            default:
-                System.out.println("Операция не распознана. Повторите ввод.");
-                result = Calculation();
+
         }
         return result;
         }

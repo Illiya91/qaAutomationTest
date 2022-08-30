@@ -1,3 +1,6 @@
+//Find the information about the order of initialization, when you create a new object of a class:
+//When constructors, initialization blocks are being executed.
+//When fields are initialized with default values.
 package Lesson5;
 
 
@@ -6,17 +9,25 @@ public class HomeTask2 {
 
     public int weight;
     public int age;
-    public String first_name;
-    public String last_name;
+    public String firstName;
+    public String lastName;
     public int height;
 
     public HomeTask2() {
-        height = height;
+        this.height = height;
         age = age;
-        first_name = first_name;
-        last_name = last_name;
+        firstName = firstName;
+        lastName = lastName;
         weight = weight;
 
+    }
+public static void main (String[] args){
+HomeTask2 defaultValue = new HomeTask2();
+System.out.println(defaultValue.height);
+System.out.println(defaultValue.age);
+System.out.println(defaultValue.firstName);
+System.out.println(defaultValue.lastName);
+System.out.println(defaultValue.weight);
     }
 }
 

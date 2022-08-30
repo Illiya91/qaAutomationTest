@@ -1,41 +1,22 @@
 package Lesson4;
-
+// Write your own example of the recursive function. You can find a lot of examples on the Internet.
 public class HomeTask9 {
-    double firstValue;
-    double secondValue;
-    String operation;
-
-
-    public HomeTask9(double a,double b,String c) {
-        firstValue = a;
-        secondValue = b;
-        operation = c;
-
-    }
-
-    public double Calculation() {
-        double result;
-        switch (operation) {
-            case "+":
-                result = firstValue + secondValue;
-                break;
-            case "-":
-                result = firstValue - secondValue;
-                break;
-            case "*":
-                result = firstValue * secondValue;
-                break;
-            case "/":
-                result = firstValue / secondValue;
-                break;
-            default:
-                System.out.println("Операция не распознана. Повторите ввод.");
-                result = Calculation();                            //Рекурсия
-        }
-        return result;
-    }
-
-
+public static void main(String[]args){
+int factorial = factorialExample(5);
+System.out.println(factorial);
 }
+public static int factorialExample(int value) {
+    if (value == 1)
+    {
+        return 1;
+    }
+
+    return value * factorialExample(value - 1);
+
+
+
+    }
+}
+
 
 

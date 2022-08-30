@@ -1,3 +1,5 @@
+//Create a simple class with some fields.
+//Demonstrate in your class how we can use initialization blocks.
 package Lesson4;
 
 public class HomeTask7 {
@@ -20,8 +22,8 @@ return result;
     }
 
     public static void main(String[] args) {
-        HomeTask7 homeTask7 = new HomeTask7(30, "Illiya", 1991);
-        System.out.println();
+        HomeTask7 homeTask7 = new HomeTask7(31, "Illiya", 1991);
+        System.out.println(homeTask7.HumanYears());
     }
 }
 

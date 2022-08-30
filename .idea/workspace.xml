@@ -9,6 +9,11 @@
       <change afterPath="$PROJECT_DIR$/../untitled1/untitled1.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../untitled2/untitled2.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lesson4/HomeTask10.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lesson4/HomeTask10.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lesson4/HomeTask5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lesson4/HomeTask5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lesson4/HomeTask6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lesson4/HomeTask6.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lesson4/HomeTask7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lesson4/HomeTask7.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lesson4/HomeTask9.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lesson4/HomeTask9.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Lesson4/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lesson4/Human.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Lesson4/Human1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lesson4/Human1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Lesson4/StaticCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lesson4/StaticCalculator.java" afterDir="false" />
@@ -61,13 +66,13 @@
       <recent name="C:\Users\Kravchenko Illiya\IdeaProjects\TestAutomation\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Human1">
-    <configuration name="HomeTask5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Lesson3.HomeTask5" />
+  <component name="RunManager" selected="Application.HomeTask7">
+    <configuration name="HomeTask10" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Lesson4.HomeTask10" />
       <module name="TestAutomation" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Lesson3.*" />
+          <option name="PATTERN" value="Lesson4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -77,6 +82,19 @@
     </configuration>
     <configuration name="HomeTask7" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Lesson4.HomeTask7" />
+      <module name="TestAutomation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Lesson4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HomeTask9" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Lesson4.HomeTask9" />
       <module name="TestAutomation" />
       <extension name="coverage">
         <pattern>
@@ -101,19 +119,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Lesson3.HomeTask7" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Lesson3.HomeTask7" />
-      <module name="TestAutomation" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Lesson3.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="TestClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Lesson4.TestClass" />
       <module name="TestAutomation" />
@@ -129,11 +134,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.HomeTask7" />
+        <item itemvalue="Application.HomeTask10" />
+        <item itemvalue="Application.HomeTask9" />
         <item itemvalue="Application.Human1" />
         <item itemvalue="Application.TestClass" />
-        <item itemvalue="Application.HomeTask5" />
-        <item itemvalue="Application.Lesson3.HomeTask7" />
-        <item itemvalue="Application.HomeTask7" />
       </list>
     </recent_temporary>
   </component>

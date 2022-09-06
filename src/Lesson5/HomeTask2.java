@@ -14,7 +14,7 @@ public class HomeTask2 {
     public int height;
 
     public HomeTask2() {
-        this.height = height;
+        height = height;
         age = age;
         firstName = firstName;
         lastName = lastName;

@@ -1,0 +1,275 @@
+Index: src/Lesson2/HomeTask3.java
+===================================================================
+diff --git a/src/Lesson2/HomeTask3.java b/src/Lesson2/HomeTask3.java
+deleted file mode 100644
+--- a/src/Lesson2/HomeTask3.java	
++++ /dev/null	
+@@ -1,12 +0,0 @@
+-//
+-package Lesson2;
+-
+-public class HomeTask3 {
+-    public static void main(String[] args) {
+-        int[] array = new int[10];
+-        for (int i = 0; i < array.length; i++) {
+-            array[i] = (int) ((Math.random() * 30) - 10);
+-            System.out.println(array[i]);
+-        }
+-        }
+-    }
+\ No newline at end of file
+Index: src/Lesson2/HomeTask6.java
+===================================================================
+diff --git a/src/Lesson2/HomeTask6.java b/src/Lesson2/HomeTask6.java
+deleted file mode 100644
+--- a/src/Lesson2/HomeTask6.java	
++++ /dev/null	
+@@ -1,16 +0,0 @@
+-//
+-package Lesson2;
+-
+-public class HomeTask6 {
+-    public static void main(String[] args){
+-        System.out.println("********\n********\n********\n********\n********\n********\n********\n********\n"+ "       ");
+-
+-
+-
+-
+-        System.out.println("********\n"+"*"+" "+" "+" "+" "+" "+" "+"*\n"+"*"+" "+" "+" "+" "+" "+" "+"*"+"\n*"+" "+" "+" "+" "+" "+" "+"*"+"\n********"+"       \n");
+-
+-        System.out.println("*\n"+"**\n"+"***\n"+"****\n"+"*****\n"+"******\n"+"*******\n"+"       ");
+-        System.out.println("      *  \n"+"     ***  \n"+"    *****  \n"+"   *******\n"+"  *********\n");
+-}
+-}
+\ No newline at end of file
+Index: src/Lesson2/HomeTask7.java
+===================================================================
+diff --git a/src/Lesson2/HomeTask7.java b/src/Lesson2/HomeTask7.java
+deleted file mode 100644
+--- a/src/Lesson2/HomeTask7.java	
++++ /dev/null	
+@@ -1,18 +0,0 @@
+-//
+-package Lesson2;
+-
+-public class HomeTask7 {
+-    public static void main(String[] args) {
+-        int[] array = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+-        int sum = 0;
+-        for (int i = 0; i < array.length; i++) {
+-            if (i == 0) continue;
+-            if (i == array.length - 1) continue;
+-            sum = sum + array[i];
+-
+-        }
+-        System.out.println(sum);
+-    }
+-
+-}
+-
+Index: src/Lesson2/HomeTask1.java
+===================================================================
+diff --git a/src/Lesson2/HomeTask1.java b/src/Lesson2/HomeTask1.java
+deleted file mode 100644
+--- a/src/Lesson2/HomeTask1.java	
++++ /dev/null	
+@@ -1,13 +0,0 @@
+-//
+-package Lesson2;
+-
+-public class HomeTask1 {
+-    public static void main(String[] args) {
+-        int firstNumber= 17;
+-        int secondNumber = 23;
+-        System.out.println(firstNumber - secondNumber);
+-        System.out.println(firstNumber + secondNumber);
+-        System.out.println(firstNumber * secondNumber);
+-        System.out.println(firstNumber / secondNumber);
+-    }
+-}
+Index: src/Lesson2/HomeTask8.java
+===================================================================
+diff --git a/src/Lesson2/HomeTask8.java b/src/Lesson2/HomeTask8.java
+deleted file mode 100644
+--- a/src/Lesson2/HomeTask8.java	
++++ /dev/null	
+@@ -1,13 +0,0 @@
+-//
+-package Lesson2;
+-
+-public class HomeTask8 {
+-    public static void main(String[] args){
+-        for (int i =1; i <100; i++){
+-        if ((i % 3 == 0 || i % 5 == 0) && i%2!=0)
+-
+-                System.out.println(i);
+-
+-        }
+-    }
+-}
+Index: src/Lesson2/HomeTask5.java
+===================================================================
+diff --git a/src/Lesson2/HomeTask5.java b/src/Lesson2/HomeTask5.java
+deleted file mode 100644
+--- a/src/Lesson2/HomeTask5.java	
++++ /dev/null	
+@@ -1,13 +0,0 @@
+-//
+-package Lesson2;
+-
+-public class HomeTask5 {
+-    public static void main(String[] args){
+-        int n,fact=1;
+-        int number=10;
+-        for(n=1;n<=number;n++){
+-            fact=fact*n;
+-            System.out.println("Factorial of "+number+" is: "+fact);
+-        }
+-    }
+-}
+Index: src/Lesson2/HomeTask4.java
+===================================================================
+diff --git a/src/Lesson2/HomeTask4.java b/src/Lesson2/HomeTask4.java
+deleted file mode 100644
+--- a/src/Lesson2/HomeTask4.java	
++++ /dev/null	
+@@ -1,18 +0,0 @@
+-//
+-package Lesson2;
+-
+-public class HomeTask4 {
+-    public static void main(String[] args) {
+-        int[] array1 =  {2, 3, 4, 5, 6, 7, 8, 9, 10, 12};
+-        int[] array2 = new int [10];
+-        int i;
+-        for (i = 0; i < array1.length; i++) {
+-            array2[i] = (int) (Math.sqrt(array1[i]));
+-            System.out.println(""+array2[i]);
+-        }
+-
+-
+-
+-
+-    }
+-}
+Index: src/Lesson2/HomeTask9.java
+===================================================================
+diff --git a/src/Lesson2/HomeTask9.java b/src/Lesson2/HomeTask9.java
+deleted file mode 100644
+--- a/src/Lesson2/HomeTask9.java	
++++ /dev/null	
+@@ -1,24 +0,0 @@
+-//
+-package Lesson2;
+-
+-public class HomeTask9 {
+-    public static void main(String[] args) {
+-        int[] array = new int[15];
+-        for (int i = 0; i < array.length; i++) {
+-            array[i] = (int) ((Math.random() * 30));
+-        }
+-        for (int out = array.length - 1; out >= 1; out--) {  //Внешний цикл
+-            for (int in = 0; in < out; in++) {       //Внутренний цикл
+-                if (array[in] < array[in + 1]) {              //Если порядок элементов нарушен
+-                    int dummy = array[in];
+-                    array[in] = array[in + 1];
+-                    array[in + 1] = dummy;
+-                }
+-            }
+-        }
+-        for (int i = 0; i < array.length; i++){
+-            System.out.println(array[i]);
+-        }
+-    }
+-}
+-
+Index: src/Lesson2/HomeTask2.java
+===================================================================
+diff --git a/src/Lesson2/HomeTask2.java b/src/Lesson2/HomeTask2.java
+deleted file mode 100644
+--- a/src/Lesson2/HomeTask2.java	
++++ /dev/null	
+@@ -1,14 +0,0 @@
+-//
+-package Lesson2;
+-
+-public class HomeTask2 {
+-    public static void main(String[] args) {
+-        int length = 5;
+-        int width = 10;
+-        double radius = 6;
+-        System.out.println (Math.PI * (radius * radius));
+-        System.out.println(length*width);
+-    }
+-
+-}
+-
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"d75180a2-5140-4e49-a075-22e159ba6117\" name=\"Changes\" comment=\"\">\r\n      <change afterPath=\"$PROJECT_DIR$/../Automation/.idea/compiler.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/../Automation/.idea/jarRepositories.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/../Automation/.idea/misc.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/../Automation/.idea/vcs.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/../Automation/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/../Automation/pom.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/../Automation/src/main/java/org/example/App.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/../Automation/src/test/java/org/example/AppTest.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/../CourseQA/.idea/.gitignore\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/../CourseQA/.idea/compiler.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/../CourseQA/.idea/encodings.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/../CourseQA/.idea/jarRepositories.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/../CourseQA/.idea/misc.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/../CourseQA/.idea/vcs.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/../CourseQA/pom.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/../CourseQA/src/test/java/org/example/AppTest.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/../HomeLesson/HomeLesson.iml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/Lesson1/HomeTask1.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/Lesson1/HomeTask2.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/Lesson1/HomeTask3.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/Lesson1/HomeTask5.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/Lesson1/HomeTask6.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/Lesson1/HomeTask7.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/Lesson1/HomeTask8.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/../untitled/untitled.iml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/../untitled1/untitled1.iml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/../untitled2/untitled2.iml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n    <option name=\"ROOT_SYNC\" value=\"SYNC\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2CGlfbg7UXz2GTzfdxolO7Wg0gY\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"last_opened_file_path\": \"C:/Users/Kravchenko Illiya/IdeaProjects/TestAutomation/src\"\r\n  }\r\n}]]></component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\Kravchenko Illiya\\IdeaProjects\\TestAutomation\\src\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"d75180a2-5140-4e49-a075-22e159ba6117\" name=\"Changes\" comment=\"\" />\r\n      <created>1658436910240</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1658436910240</updated>\r\n    </task>\r\n    <servers />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	
++++ b/.idea/workspace.xml	
+@@ -22,17 +22,14 @@
+       <change afterPath="$PROJECT_DIR$/../CourseQA/pom.xml" afterDir="false" />
+       <change afterPath="$PROJECT_DIR$/../CourseQA/src/test/java/org/example/AppTest.java" afterDir="false" />
+       <change afterPath="$PROJECT_DIR$/../HomeLesson/HomeLesson.iml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/Lesson1/HomeTask1.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/Lesson1/HomeTask2.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/Lesson1/HomeTask3.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/Lesson1/HomeTask5.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/Lesson1/HomeTask6.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/Lesson1/HomeTask7.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/Lesson1/HomeTask8.java" afterDir="false" />
+       <change afterPath="$PROJECT_DIR$/../untitled/untitled.iml" afterDir="false" />
+       <change afterPath="$PROJECT_DIR$/../untitled1/untitled1.iml" afterDir="false" />
+       <change afterPath="$PROJECT_DIR$/../untitled2/untitled2.iml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_19_09_2022_11_20__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_19_09_2022_11_20__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_19_09_2022_11_23__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_19_09_2022_11_23__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_19_09_2022_11_24__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_19_09_2022_11_24__Changes_.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Lesson1/HomeTask1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lesson1/HomeTask1.java" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -40,8 +37,16 @@
+     <option name="LAST_RESOLUTION" value="IGNORE" />
+   </component>
+   <component name="Git.Settings">
++    <option name="RECENT_BRANCH_BY_REPOSITORY">
++      <map>
++        <entry key="$PROJECT_DIR$" value="master" />
++      </map>
++    </option>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+-    <option name="ROOT_SYNC" value="SYNC" />
++    <option name="ROOT_SYNC" value="DONT_SYNC" />
++  </component>
++  <component name="MarkdownSettingsMigration">
++    <option name="stateVersion" value="1" />
+   </component>
+   <component name="ProjectId" id="2CGlfbg7UXz2GTzfdxolO7Wg0gY" />
+   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+@@ -53,14 +58,9 @@
+   "keyToString": {
+     "RunOnceActivity.OpenProjectViewOnStart": "true",
+     "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "last_opened_file_path": "C:/Users/Kravchenko Illiya/IdeaProjects/TestAutomation/src"
++    "last_opened_file_path": "C:/Users/Kravchenko Illiya/IdeaProjects/TestAutomation"
+   }
+ }]]></component>
+-  <component name="RecentsManager">
+-    <key name="CopyFile.RECENT_KEYS">
+-      <recent name="C:\Users\Kravchenko Illiya\IdeaProjects\TestAutomation\src" />
+-    </key>
+-  </component>
+   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+   <component name="TaskManager">
+     <task active="true" id="Default" summary="Default task">
+diff --git a/TestAutomation.iml b/qaAutomationTest.iml
+rename from TestAutomation.iml
+rename to qaAutomationTest.iml

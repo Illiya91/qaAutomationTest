@@ -1,11 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="d75180a2-5140-4e49-a075-22e159ba6117" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Automation/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Automation/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Automation/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Automation/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Automation/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Automation/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Automation/src/main/java/org/example/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Automation/src/test/java/org/example/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CourseQA/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CourseQA/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CourseQA/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CourseQA/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CourseQA/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CourseQA/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CourseQA/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CourseQA/src/test/java/org/example/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HomeLesson/HomeLesson.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lesson7/Converter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lesson7/Flyable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lesson7/RemoteDevice/Device.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lesson7/RemoteDevice/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lesson7/RemoteDevice/RemoteController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lesson7/RemoteDevice/TV.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lesson7/RemoteDevice/TVDevice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lesson7/RemoteDevice/Volume.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lesson7/Volume.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/untitled.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled1/untitled1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled2/untitled2.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +52,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/Kravchenko Illiya/IdeaProjects/TestAutomation/src"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -37,5 +66,16 @@
       <updated>1658436910240</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

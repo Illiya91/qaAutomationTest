@@ -1,0 +1,26 @@
+Index: src/HomeWork1.java
+===================================================================
+diff --git a/src/HomeWork1.java b/src/Lesson10/HomeWork1.java
+rename from src/HomeWork1.java
+rename to src/Lesson10/HomeWork1.java
+--- a/src/HomeWork1.java	
++++ b/src/Lesson10/HomeWork1.java	
+@@ -10,15 +10,16 @@
+ public class HomeWork1 {
+ 
+ public static void main(String[] args) throws IOException, IOException {
+-
++    String separator = File.separator;
+     String pathFile1 = "C:" + separator + "Users" + separator + "Kravchenko Illiya" + separator + "OneDrive" + separator + "Рабочий стол" + separator +"Test1.txt";
+     String pathFile2 = "C:" + separator + "Users" + separator + "Kravchenko Illiya" + separator + "OneDrive" + separator + "Рабочий стол" + separator +"Test2.txt";
+-    String separator = File.separator;
++
+ 
+     FileInputStream input = new FileInputStream(pathFile1);
+         FileOutputStream output = new FileOutputStream(pathFile2);
+ 
+         while(input.available() > 0) {
++
+         int data = input.read();
+         output.write(data);
+         }

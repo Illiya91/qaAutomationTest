@@ -12,7 +12,7 @@ public class Boxer {
         this.strength = 5;
     }
 
-    public boolean fight(Boxer anotherBoxer) {
+    public Object fight(Boxer anotherBoxer) {
         // write your code here
         int count = 0;
         int count1 = 0;
@@ -32,19 +32,17 @@ public class Boxer {
 
 
         if (count > count1) {
-            return true;
-        } else if (count < count1) {
-            return false;
-        } else if (count == count1) {
-            return true;
-        }
-        return false;
+            return anotherBoxer;
 
+
+        }
+        return count;
     }
 
     public static void main(String[] args){
-
-        }
+Boxer boxer = new Boxer();
+    System.out.println(boxer.fight(boxer));
+    }
 
     }
 

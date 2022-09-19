@@ -1,11 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="d75180a2-5140-4e49-a075-22e159ba6117" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Automation/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Automation/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Automation/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Automation/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Automation/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Automation/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Automation/src/main/java/org/example/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Automation/src/test/java/org/example/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CourseQA/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CourseQA/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CourseQA/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CourseQA/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CourseQA/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CourseQA/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CourseQA/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CourseQA/src/test/java/org/example/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HomeLesson/HomeLesson.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lesson1/HomeTask1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lesson1/HomeTask2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lesson1/HomeTask3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lesson1/HomeTask5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lesson1/HomeTask6.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lesson1/HomeTask7.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lesson1/HomeTask8.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/untitled.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled1/untitled1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled2/untitled2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,6 +41,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="ProjectId" id="2CGlfbg7UXz2GTzfdxolO7Wg0gY" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -24,9 +52,15 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/Kravchenko Illiya/IdeaProjects/TestAutomation/src"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Kravchenko Illiya\IdeaProjects\TestAutomation\src" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -37,5 +71,16 @@
       <updated>1658436910240</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

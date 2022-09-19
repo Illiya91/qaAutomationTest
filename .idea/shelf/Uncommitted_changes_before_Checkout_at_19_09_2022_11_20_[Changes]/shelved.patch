@@ -1,0 +1,2515 @@
+Index: src/Lesson8/Example.java
+===================================================================
+diff --git a/src/Lesson8/Example.java b/src/Lesson8/Example.java
+deleted file mode 100644
+--- a/src/Lesson8/Example.java	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
++++ /dev/null	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
+@@ -1,33 +0,0 @@
+-package Lesson8;
+-
+-
+-
+-import java.util.Objects;
+-
+-public class Example {
+-    private String first, last;
+-
+-    public Example(String first, String last) {
+-        this.first = first;
+-        this.last = last;
+-    }
+-
+-    @Override
+-    public boolean equals(Object o) {
+-        if (this == o) return true;
+-        if (o == null || getClass() != o.getClass()) return false;
+-        Example example = (Example) o;
+-        return Objects.equals(first, example.first) && Objects.equals(last, example.last);
+-    }
+-
+-    @Override
+-    public int hashCode() {
+-        return Objects.hash(first, last);
+-    }
+-
+-    public static void main(String[] args) {
+-        Example result  = new Example("Duck", "Donald");
+-        result.equals(result);
+-        result.hashCode();
+-    }
+-}
+\ No newline at end of file
+Index: src/Lesson5/Package1/Class2.java
+===================================================================
+diff --git a/src/Lesson5/Package1/Class2.java b/src/Lesson5/Package1/Class2.java
+deleted file mode 100644
+--- a/src/Lesson5/Package1/Class2.java	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
++++ /dev/null	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
+@@ -1,16 +0,0 @@
+-package Lesson5.Package1;
+-
+-public class Class2 extends Class1{
+-    public Class2(int x, int y, int z) {
+-        super(x, y, z);
+-    }
+-
+-    public static void main(String[] args){
+-        Class1 x = new Class1(3,5,7);
+-        Class1 y = new Class1(2,4,4);
+-        Class1 z = new Class1(5,5,6);
+-        System.out.println(x);
+-        System.out.println(y);
+-        System.out.println(z);
+-    }
+-}
+Index: src/Lesson2/HomeTask3.java
+===================================================================
+diff --git a/src/Lesson2/HomeTask3.java b/src/Lesson2/HomeTask3.java
+deleted file mode 100644
+--- a/src/Lesson2/HomeTask3.java	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
++++ /dev/null	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
+@@ -1,11 +0,0 @@
+-package Lesson2;
+-
+-public class HomeTask3 {
+-    public static void main(String[] args) {
+-        int[] array = new int[10];
+-        for (int i = 0; i < array.length; i++) {
+-            array[i] = (int) ((Math.random() * 30) - 10);
+-            System.out.println(array[i]);
+-        }
+-        }
+-    }
+\ No newline at end of file
+Index: src/Lesson3/HomeTask7.java
+===================================================================
+diff --git a/src/Lesson3/HomeTask7.java b/src/Lesson3/HomeTask7.java
+deleted file mode 100644
+--- a/src/Lesson3/HomeTask7.java	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
++++ /dev/null	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
+@@ -1,20 +0,0 @@
+-//7. Given a string "Den, John, Will, Kate, Adam, Robin". Print all the names from the following string each from a new line.
+-//   Example:
+-//   Den
+-//   John
+-//   Will
+-//   Kate
+-//   ...
+-package Lesson3;
+-
+-public class HomeTask7 {
+-    public static void main(String[] args){
+-        String name = "Den, John, Will, Kate, Adam, Robin";
+-        for (String s : name.split(", ")) {
+-            System.out.println(s);
+-        }
+-    }
+-}
+-
+-
+-
+Index: src/Lesson7/RemoteDevice/Main.java
+===================================================================
+diff --git a/src/Lesson7/RemoteDevice/Main.java b/src/Lesson7/RemoteDevice/Main.java
+deleted file mode 100644
+--- a/src/Lesson7/RemoteDevice/Main.java	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
++++ /dev/null	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
+@@ -1,14 +0,0 @@
+-package Lesson7.RemoteDevice;
+-
+-public class Main {
+-    public static void main(String[] args) {
+-        RemoteController remoteController = new RemoteController();
+-        remoteController.currentChanel();
+-        remoteController.downVolume();
+-        remoteController.mute();
+-        remoteController.powerOff();
+-        remoteController.powerOn();
+-        remoteController.setChannel();
+-        remoteController.upVolume();
+-    }
+-    }
+\ No newline at end of file
+Index: src/Lesson5/HomeTask9.java
+===================================================================
+diff --git a/src/Lesson5/HomeTask9.java b/src/Lesson5/HomeTask9.java
+deleted file mode 100644
+--- a/src/Lesson5/HomeTask9.java	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
++++ /dev/null	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
+@@ -1,9 +0,0 @@
+-package Lesson5;
+-//Answer the question: What is a private access? Create a simple program to demonstrate the private access.
+-//Tips:
+-// - Create two classes
+-// - In on of them create private members
+-// - In the second class create an object of the first class
+-// - Try to access the private members
+-public class HomeTask9 {
+-}
+Index: src/Lesson5/Myclass.java
+===================================================================
+diff --git a/src/Lesson5/Myclass.java b/src/Lesson5/Myclass.java
+deleted file mode 100644
+--- a/src/Lesson5/Myclass.java	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
++++ /dev/null	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
+@@ -1,30 +0,0 @@
+-package Lesson5;
+-
+-//Create a class with two different methods and two fields. One of methods should be static, another - non-static.
+-//The same thing should be done with class fields(first - static, second - non-static).
+-//These two methods should change the corresponding fields of the class when called.
+-//Create another class with main method to test your code.
+-    public class Myclass {
+-        static int staticField;
+-        int dynamicField;
+-
+-        static void change(int value) {
+-            staticField = value;
+-        }
+-
+-        void anotherChange(int value) {
+-            this.dynamicField = value;
+-        }
+-    public static void main(String[] args){
+-      Myclass value = new Myclass();
+-      staticField = 10;
+-        value.dynamicField= 10;
+-      System.out.println(staticField);
+-        System.out.println(value.dynamicField);
+-        }
+-    }
+-
+-
+-
+-
+-
+Index: src/Lesson7/Volume.java
+===================================================================
+diff --git a/src/Lesson7/Volume.java b/src/Lesson7/Volume.java
+deleted file mode 100644
+--- a/src/Lesson7/Volume.java	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
++++ /dev/null	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
+@@ -1,63 +0,0 @@
+-package Lesson7;
+-
+-import sun.awt.SunHints;
+-
+-public interface Volume {
+-
+-    void changeVolume(double value);
+-
+-
+-
+-
+-   }
+-    interface State  {
+-        void on();
+-        void off();
+-
+-
+-    }
+-
+-
+-
+-
+-class MyDevice implements Volume, State {
+-    private double volume;
+-
+-    public void changeVolume(double value) {
+-        volume = value;
+-        System.out.println("Volume" + " " + value);
+-    }
+-
+-    public void on() {
+-        System.out.println("Device on");
+-    }
+-
+-    public void off() {
+-        System.out.println("Device off");
+-    }
+-
+-
+-    public static void main(String[] args) {
+-    MyDevice myDevice = new MyDevice();
+-        myDevice.changeVolume(6);
+-        myDevice.on();
+-        myDevice.off();
+-    }
+-
+-}
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+Index: src/Lesson4/Human1.java
+===================================================================
+diff --git a/src/Lesson4/Human1.java b/src/Lesson4/Human1.java
+deleted file mode 100644
+--- a/src/Lesson4/Human1.java	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
++++ /dev/null	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
+@@ -1,15 +0,0 @@
+-package Lesson4;
+-
+-public class Human1 {
+-    public static void main(String[] args) {
+-        Human myHuman = new Human(50, 30, "Ilon", "Mask", 156);
+-
+-        System.out.println(myHuman);
+-        System.out.println("Height = " + myHuman.height);
+-        System.out.println("Age = " + myHuman.age);
+-        System.out.println("First name = " + myHuman.firstName);
+-        System.out.println("Last name = " + myHuman.lastName);
+-        System.out.println("Weight = " + myHuman.weight);
+-    }
+-
+-}
+Index: src/Lesson4/HomeTask5.java
+===================================================================
+diff --git a/src/Lesson4/HomeTask5.java b/src/Lesson4/HomeTask5.java
+deleted file mode 100644
+--- a/src/Lesson4/HomeTask5.java	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
++++ /dev/null	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
+@@ -1,26 +0,0 @@
+-//Create a simple class with a bunch of constructors.
+-//All these constructors should take different number of parameters.
+-//Demonstrate in your class, how we can call one constructor from another.
+-package Lesson4;
+-
+-public class HomeTask5 {
+-    int age;
+-    String name;
+-    int yearBirthday;
+-
+-
+-    HomeTask5(int age, String name, int yearBirthday) {
+-        this.age = age;
+-        this.name = name;
+-        this.yearBirthday = yearBirthday;
+-
+-    }
+-
+-    HomeTask5(int age, String name) {
+-            this(age,name,2022-age);
+-
+-    }
+-
+-}
+-
+-
+Index: src/Lesson4/Boxer.java
+===================================================================
+diff --git a/src/Lesson4/Boxer.java b/src/Lesson4/Boxer.java
+deleted file mode 100644
+--- a/src/Lesson4/Boxer.java	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
++++ /dev/null	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
+@@ -1,51 +0,0 @@
+-package Lesson4;
+-
+-public class Boxer {
+-
+-    public int age ;
+-    public int weight ;
+-    public int strength ;
+-
+-    public Boxer() {
+-        this.age = 5;
+-        this.weight = 5;
+-        this.strength = 5;
+-    }
+-
+-    public boolean fight(Boxer anotherBoxer) {
+-        // write your code here
+-        int count = 0;
+-        int count1 = 0;
+-
+-        if (this.age > anotherBoxer.age) {
+-            count++;
+-        } else count1++;
+-
+-        if (this.strength > anotherBoxer.strength) {
+-            count++;
+-        } else count1++;
+-
+-        if (this.weight > anotherBoxer.weight) {
+-            count++;
+-        } else
+-            count1++;
+-
+-
+-        if (count > count1) {
+-            return true;
+-        } else if (count < count1) {
+-            return false;
+-        } else if (count == count1) {
+-            return true;
+-        }
+-        return false;
+-
+-    }
+-
+-    public static void main(String[] args){
+-
+-        }
+-
+-    }
+-
+-
+Index: src/Lesson5/HomeTask2.java
+===================================================================
+diff --git a/src/Lesson5/HomeTask2.java b/src/Lesson5/HomeTask2.java
+deleted file mode 100644
+--- a/src/Lesson5/HomeTask2.java	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
++++ /dev/null	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
+@@ -1,41 +0,0 @@
+-//Find the information about the order of initialization, when you create a new object of a class:
+-//When constructors, initialization blocks are being executed.
+-//When fields are initialized with default values.
+-package Lesson5;
+-
+-
+-public class HomeTask2 {
+-
+-
+-    public int weight;
+-    public int age;
+-    public String firstName;
+-    public String lastName;
+-    public int height;
+-
+-    public HomeTask2() {
+-        height = height;
+-        age = age;
+-        firstName = firstName;
+-        lastName = lastName;
+-        weight = weight;
+-
+-    }
+-public static void main (String[] args){
+-HomeTask2 defaultValue = new HomeTask2();
+-System.out.println(defaultValue.height);
+-System.out.println(defaultValue.age);
+-System.out.println(defaultValue.firstName);
+-System.out.println(defaultValue.lastName);
+-System.out.println(defaultValue.weight);
+-    }
+-}
+-
+-
+-
+-
+-
+-
+-
+-
+-
+Index: src/Lesson8/HomeTask2.java
+===================================================================
+diff --git a/src/Lesson8/HomeTask2.java b/src/Lesson8/HomeTask2.java
+deleted file mode 100644
+--- a/src/Lesson8/HomeTask2.java	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
++++ /dev/null	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
+@@ -1,20 +0,0 @@
+-package Lesson8;
+-
+-public class HomeTask2 {
+-    public static void main(String[] args) {
+-
+-        try {
+-            System.out.println(divideByZero());
+-        } catch (ArithmeticException e) {
+-
+-
+-        }
+-    }
+-    public static int divideByZero() {
+-        int a = 5;
+-        int b = 0;
+-        return a / b;
+-
+-    }
+-}
+-
+Index: src/Lesson7/RemoteDevice/TV.java
+===================================================================
+diff --git a/src/Lesson7/RemoteDevice/TV.java b/src/Lesson7/RemoteDevice/TV.java
+deleted file mode 100644
+--- a/src/Lesson7/RemoteDevice/TV.java	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
++++ /dev/null	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
+@@ -1,38 +0,0 @@
+-package Lesson7.RemoteDevice;
+-
+-public class TV extends TVDevice{
+-    @Override
+-    public void powerOn() {
+-
+-    }
+-
+-    @Override
+-    public void powerOff() {
+-
+-    }
+-
+-    @Override
+-    public int setChannel() {
+-        return 0;
+-    }
+-
+-    @Override
+-    public void currentChanel() {
+-
+-    }
+-
+-    @Override
+-    public void upVolume() {
+-
+-    }
+-
+-    @Override
+-    public void downVolume() {
+-
+-    }
+-
+-    @Override
+-    public void mute() {
+-
+-    }
+-}
+Index: src/Lesson5/HomeTask8.java
+===================================================================
+diff --git a/src/Lesson5/HomeTask8.java b/src/Lesson5/HomeTask8.java
+deleted file mode 100644
+--- a/src/Lesson5/HomeTask8.java	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
++++ /dev/null	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
+@@ -1,5 +0,0 @@
+-package Lesson5;
+-//Answer the question: What is a public access? Create a simple program to demonstrate the public access.
+-//You can use tips from the task 3.
+-public class HomeTask8 {
+-}
+Index: src/Lesson5/Test.java
+===================================================================
+diff --git a/src/Lesson5/Test.java b/src/Lesson5/Test.java
+deleted file mode 100644
+--- a/src/Lesson5/Test.java	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
++++ /dev/null	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
+@@ -1,9 +0,0 @@
+-//How can you create a constant in Java, that will be available for everyone outside your class or package?
+-package Lesson5;
+-
+-public class Test {
+-    public static void main(String[] args) {
+-        double d = 3 * Math.PI;
+-        System.out.println(d);
+-    }
+-}
+Index: src/Lesson3/HomeTask8.java
+===================================================================
+diff --git a/src/Lesson3/HomeTask8.java b/src/Lesson3/HomeTask8.java
+deleted file mode 100644
+--- a/src/Lesson3/HomeTask8.java	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
++++ /dev/null	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
+@@ -1,12 +0,0 @@
+-//Given credit card's number 1234 5678 9012 3456. Print card's number in the next view **** **** **** 3456.
+-
+-package Lesson3;
+-
+-public class HomeTask8 {
+-    public static void main(String[] args){
+-        StringBuilder strBuilder = new StringBuilder("1234 5678 9012 3456");
+-        strBuilder.replace(0, 14, "**** **** ****");
+-        System.out.println(strBuilder);
+-
+-    }
+-}
+Index: src/Lesson4/HomeTask6.java
+===================================================================
+diff --git a/src/Lesson4/HomeTask6.java b/src/Lesson4/HomeTask6.java
+deleted file mode 100644
+--- a/src/Lesson4/HomeTask6.java	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
++++ /dev/null	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
+@@ -1,19 +0,0 @@
+-package Lesson4;
+-//Create a simple class with any 3 fields.
+-//Demonstrate in your class how we can use "this" keyword to refer to the object,
+-//from which a constructor or a method was invoked
+-public class HomeTask6 {
+-    int age;
+-    String name;
+-    int yearBirthday;
+-HomeTask6(){
+-}
+-
+-    void changeNameObject(int a, String b, int c){
+-        this.age = a;
+-        this.name = b;
+-        this.yearBirthday = c;
+-
+-    }
+-}
+-
+Index: src/Lesson6/Figure.java
+===================================================================
+diff --git a/src/Lesson6/Figure.java b/src/Lesson6/Figure.java
+deleted file mode 100644
+--- a/src/Lesson6/Figure.java	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
++++ /dev/null	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
+@@ -1,117 +0,0 @@
+-package Lesson6;
+-
+-public  abstract class Figure {
+-    public double width;
+-    public double length;
+-
+-    public abstract double area();
+-
+-    public abstract double perimeter();
+-
+-
+-    public static class Rectangle extends Figure {
+-        private final double width, length; //sides
+-
+-        public Rectangle() {
+-            this(1, 1, 44);
+-        }
+-
+-        public Rectangle(double width, double length, int i) {
+-            this.width = width;
+-            this.length = length;
+-        }
+-
+-        @Override
+-        public double area() {
+-            return width * length;
+-        }
+-
+-        @Override
+-        public double perimeter() {
+-            return 2 * (width + length);
+-        }
+-
+-    }
+-
+-    public static class Circle extends Figure {
+-        private final double radius;
+-        final double pi = Math.PI;
+-
+-        public Circle() {
+-            this(1);
+-        }
+-
+-        public Circle(double radius) {
+-            this.radius = radius;
+-        }
+-
+-        @Override
+-        public double area() {
+-            return pi * Math.pow(radius, 2);
+-        }
+-
+-        public double perimeter() {
+-            return 2 * pi * radius;
+-        }
+-    }
+-
+-    public static class Triangle extends Figure {
+-        private final double a, b, c;
+-
+-        public Triangle() {
+-            this(1, 1, 1);
+-        }
+-
+-        public Triangle(double a, double b, double c) {
+-            this.a = a;
+-            this.b = b;
+-            this.c = c;
+-        }
+-
+-        @Override
+-        public double area() {
+-            double s = (a + b + c) / 2;
+-            return Math.sqrt(s * (s - a) * (s - b) * (s - c));
+-        }
+-
+-        @Override
+-        public double perimeter() {
+-            return a + b + c;
+-        }
+-
+-        public static void main(String[] args) {
+-            double width = 5, length = 7;
+-        Figure rectangle = new Rectangle(50, 33, 44);
+-            System.out.println("Rectangle width: " + width + " and length: " + length
+-                    + "\nResulting area: " + rectangle.area()
+-                    + "\nResulting perimeter: " + rectangle.perimeter() + "\n");
+-            double a = 5, b = 3, c = 4;
+-            Figure triangle = new Triangle(a, b, c);
+-            System.out.println("Triangle sides lengths: " + a + ", " + b + ", " + c
+-                    + "\nResulting Area: " + triangle.area()
+-                    + "\nResulting Perimeter: " + triangle.perimeter() + "\n");
+-            double radius = 5;
+-            Figure circle = new Circle(radius);
+-            System.out.println("Circle radius: " + radius
+-                    + "\nResulting Area: " + circle.area()
+-                    + "\nResulting Perimeter: " + circle.perimeter() + "\n");
+-        }
+-    }
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-    public void calculateArea () {
+-
+-    }
+-}
+Index: src/Lesson3/HomeTask1.java
+===================================================================
+diff --git a/src/Lesson3/HomeTask1.java b/src/Lesson3/HomeTask1.java
+deleted file mode 100644
+--- a/src/Lesson3/HomeTask1.java	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
++++ /dev/null	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
+@@ -1,16 +0,0 @@
+-// 1. Given a string. Write a code that will create a new string made of the first two characters of the initial string.
+-//If the string is shorter than length 2, return whatever there is, so "X" yields "X", and the empty string "" yields the empty string "".
+-package Lesson3;
+-
+-
+-public class HomeTask1 {
+-    public static void main(String[] args) {
+-
+-        String a = "AE_1381";
+-        if (a.length() >= 2) {
+-            System.out.println(a.substring(0, 2));
+-        }
+-        else
+-            System.out.println(a);
+-    }
+-}
+Index: src/Lesson4/Wheel.java
+===================================================================
+diff --git a/src/Lesson4/Wheel.java b/src/Lesson4/Wheel.java
+deleted file mode 100644
+--- a/src/Lesson4/Wheel.java	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
++++ /dev/null	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
+@@ -1,15 +0,0 @@
+-package Lesson4;
+-
+-public class Wheel {
+-    public int radius;
+-    public int high;
+-    public int radialCord;
+-
+-    public static void main(String[] args) {
+-   Car car = new Car();
+-   Engine engine = new Engine();
+-   System.out.println(new Engine());
+-        System.out.println(new Car());
+-
+-    }
+-}
+\ No newline at end of file
+Index: src/Lesson8/keyboard.java
+===================================================================
+diff --git a/src/Lesson8/keyboard.java b/src/Lesson8/keyboard.java
+deleted file mode 100644
+--- a/src/Lesson8/keyboard.java	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
++++ /dev/null	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
+@@ -1,30 +0,0 @@
+-package Lesson8;
+-
+-
+-import java.util.ArrayList;
+-import java.util.Scanner;
+-
+-public class keyboard {
+-    public static void main(String[] args) {
+-        readData();
+-
+-    }
+-
+-    public static void readData() {
+-        ArrayList list = new ArrayList();
+-        try {
+-            while (true) {
+-                Scanner sc = new Scanner(System.in);
+-                float number = sc.nextFloat();
+-                list.add(number);
+-            }
+-        } catch (Exception e) {
+-            for (Object number : list) {
+-
+-                System.out.println(number);
+-            }
+-        }
+-    }
+-}
+-
+-
+Index: src/Lesson8/HomeTask3.java
+===================================================================
+diff --git a/src/Lesson8/HomeTask3.java b/src/Lesson8/HomeTask3.java
+deleted file mode 100644
+--- a/src/Lesson8/HomeTask3.java	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
++++ /dev/null	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
+@@ -1,16 +0,0 @@
+-package Lesson8;
+-
+-public class HomeTask3 {
+-    public static void main(String[] args) {
+-
+-        int a = args.length;
+-        System.out.println(a);
+-
+-        int b = 10 / a;
+-        int[] c = {1};
+-        System.out.println(c[1]);
+-
+-    }
+-}
+-
+-
+Index: src/Lesson2/HomeTask8.java
+===================================================================
+diff --git a/src/Lesson2/HomeTask8.java b/src/Lesson2/HomeTask8.java
+deleted file mode 100644
+--- a/src/Lesson2/HomeTask8.java	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
++++ /dev/null	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
+@@ -1,12 +0,0 @@
+-package Lesson2;
+-
+-public class HomeTask8 {
+-    public static void main(String[] args){
+-        for (int i =1; i <100; i++){
+-        if ((i % 3 == 0 || i % 5 == 0) && i%2!=0)
+-
+-                System.out.println(i);
+-
+-        }
+-    }
+-}
+Index: src/Lesson5/HomeTask4.java
+===================================================================
+diff --git a/src/Lesson5/HomeTask4.java b/src/Lesson5/HomeTask4.java
+deleted file mode 100644
+--- a/src/Lesson5/HomeTask4.java	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
++++ /dev/null	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
+@@ -1,25 +0,0 @@
+-package Lesson5;
+-
+-//4. Create a simple class with overloaded methods. Write another class to demonstrate the concept of methods overloading.
+-
+-public class HomeTask4 {
+-    int num1;
+-    Double num3;
+-    int num2;
+-
+-
+-    int OverloadedMethod(int num1, int num2) {
+-        return num1 + num2;
+-    }
+-
+-    Double OverloadedMethod(double num3, int num2) {
+-        return num3 + num2;
+-    }
+-    public static void main(String[] args){
+-        HomeTask4 overload = new HomeTask4();
+-        System.out.println(overload.OverloadedMethod(5, 5));
+-        System.out.println(overload.OverloadedMethod(5.5, 5));
+-    }
+-}
+-
+-
+Index: src/Lesson7/Flyable.java
+===================================================================
+diff --git a/src/Lesson7/Flyable.java b/src/Lesson7/Flyable.java
+deleted file mode 100644
+--- a/src/Lesson7/Flyable.java	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
++++ /dev/null	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
+@@ -1,30 +0,0 @@
+-package Lesson7;
+-
+-
+-public interface Flyable {
+-     public void fly();
+-    }
+-
+-    class Bird implements Flyable{
+-
+-    public void fly() {
+-System.out.println("Птица");
+-        }
+-    }
+-
+-    class Duck implements Flyable{
+-
+-
+-        public void fly() {
+-            System.out.println("Утка");
+-        }
+-
+-
+-
+-        public static void main(String[] args) {
+-            Bird bird = new Bird();
+-            Duck duck = new Duck();
+-            duck.fly();
+-            bird.fly();
+-        }
+-    }
+\ No newline at end of file
+Index: src/Lesson4/HomeTask10.java
+===================================================================
+diff --git a/src/Lesson4/HomeTask10.java b/src/Lesson4/HomeTask10.java
+deleted file mode 100644
+--- a/src/Lesson4/HomeTask10.java	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
++++ /dev/null	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
+@@ -1,23 +0,0 @@
+-package Lesson4;
+-
+-public class HomeTask10 {
+-    int num1;
+-    Double num3;
+-    int num2;
+-
+-
+-    int OverloadedMethod(int num1, int num2) {
+-        return num1 + num2;
+-    }
+-
+-    Double OverloadedMethod(double num3, int num2) {
+-        return num3 + num2;
+-    }
+-    public static void main(String[] args){
+-    HomeTask10 overload = new HomeTask10();
+-    System.out.println(overload.OverloadedMethod(5, 5));
+-    System.out.println(overload.OverloadedMethod(5.5, 5));
+-    }
+-    }
+-
+-
+Index: src/Lesson7/RemoteDevice/Volume.java
+===================================================================
+diff --git a/src/Lesson7/RemoteDevice/Volume.java b/src/Lesson7/RemoteDevice/Volume.java
+deleted file mode 100644
+--- a/src/Lesson7/RemoteDevice/Volume.java	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
++++ /dev/null	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
+@@ -1,7 +0,0 @@
+-package Lesson7.RemoteDevice;
+-
+-public interface Volume {
+-void upVolume();
+-void downVolume();
+-void mute();
+-}
+Index: src/Lesson5/Package1/Class1.java
+===================================================================
+diff --git a/src/Lesson5/Package1/Class1.java b/src/Lesson5/Package1/Class1.java
+deleted file mode 100644
+--- a/src/Lesson5/Package1/Class1.java	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
++++ /dev/null	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
+@@ -1,17 +0,0 @@
+-package Lesson5.Package1;
+-
+-public class Class1 {
+-private int x ;
+-private int y ;
+-private int z ;
+-private int result;
+-
+-
+-    public Class1(int x, int y, int z) {
+-        x = x;
+-        y = y;
+-        z = z;
+-        return;
+-
+-    }
+-    }
+Index: src/Lesson5/HomeTask5Class1.java
+===================================================================
+diff --git a/src/Lesson5/HomeTask5Class1.java b/src/Lesson5/HomeTask5Class1.java
+deleted file mode 100644
+--- a/src/Lesson5/HomeTask5Class1.java	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
++++ /dev/null	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
+@@ -1,30 +0,0 @@
+-package Lesson5;
+-
+-import Lesson5.Class.HomeTask5Class2;
+-
+-//Create 2 classes with the same name, but put them in different packages. For example, com.domainname.modulename.
+-//Create a third class with the main method.
+-//In the main method create two different objects of your classes specifying the full name of the classes (including packages).
+-
+-public class HomeTask5Class1 {
+-
+-    public static class comDomainnameModulename {
+-
+-
+-        public comDomainnameModulename(int a, int b) {
+-        }
+-    }
+-public class name{}
+- int DomainName(int a, int b){
+- return  a + b;
+- }
+-
+- public static void main(String[] args) {
+-        comDomainnameModulename domainnameModulename = new comDomainnameModulename(5,5);
+-        HomeTask5Class2.comDomainnameModulename domainnameModulename1 = new HomeTask5Class2.comDomainnameModulename(10,6);
+-    System.out.println(domainnameModulename);
+-        System.out.println(HomeTask5Class2.comDomainnameModulename);
+-    }
+-}
+-
+-
+Index: src/Lesson5/HomeTask3.java
+===================================================================
+diff --git a/src/Lesson5/HomeTask3.java b/src/Lesson5/HomeTask3.java
+deleted file mode 100644
+--- a/src/Lesson5/HomeTask3.java	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
++++ /dev/null	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
+@@ -1,22 +0,0 @@
+-package Lesson5;
+-
+-public class HomeTask3 {
+-    // Write your own example of the recursive function. You can find a lot of examples on the Internet.
+-    public class Recursia {
+-        public void main(String[] args){
+-            int factorial = factorialExample(5);
+-            System.out.println(factorial);
+-        }
+-        public int factorialExample(int value) {
+-            if (value == 1)
+-            {
+-                return 1;
+-            }
+-
+-            return value * factorialExample(value - 1);
+-
+-
+-
+-        }
+-    }
+-}
+Index: src/Lesson2/HomeTask4.java
+===================================================================
+diff --git a/src/Lesson2/HomeTask4.java b/src/Lesson2/HomeTask4.java
+deleted file mode 100644
+--- a/src/Lesson2/HomeTask4.java	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
++++ /dev/null	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
+@@ -1,17 +0,0 @@
+-package Lesson2;
+-
+-public class HomeTask4 {
+-    public static void main(String[] args) {
+-        int[] array1 =  {2, 3, 4, 5, 6, 7, 8, 9, 10, 12};
+-        int[] array2 = new int [10];
+-        int i;
+-        for (i = 0; i < array1.length; i++) {
+-            array2[i] = (int) (Math.sqrt(array1[i]));
+-            System.out.println(""+array2[i]);
+-        }
+-
+-
+-
+-
+-    }
+-}
+Index: src/Lesson5/Package2/Class3.java
+===================================================================
+diff --git a/src/Lesson5/Package2/Class3.java b/src/Lesson5/Package2/Class3.java
+deleted file mode 100644
+--- a/src/Lesson5/Package2/Class3.java	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
++++ /dev/null	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
+@@ -1,18 +0,0 @@
+-package Lesson5.Package2;
+-
+-import Lesson5.Package1.Class1;
+-
+-public class Class3 extends Class1 {
+-    public Class3(int x, int y, int z) {
+-        super(x, y, z);
+-    }
+-
+-    public static void main(String[] args){
+-        Class1 x = new Class1(4,5,6);
+-        Class1 y = new Class1(6,7,8);
+-        Class1 z = new Class1(9,7,7);
+-        System.out.println(x);
+-        System.out.println(y);
+-        System.out.println(z);
+-    }
+-}
+\ No newline at end of file
+Index: src/Lesson4/HomeTask7.java
+===================================================================
+diff --git a/src/Lesson4/HomeTask7.java b/src/Lesson4/HomeTask7.java
+deleted file mode 100644
+--- a/src/Lesson4/HomeTask7.java	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
++++ /dev/null	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
+@@ -1,29 +0,0 @@
+-//Create a simple class with some fields.
+-//Demonstrate in your class how we can use initialization blocks.
+-package Lesson4;
+-
+-public class HomeTask7 {
+-    int age;
+-    String name;
+-    int yearBirthday;
+-
+-
+-    HomeTask7(int age, String name, int yearBirthday){
+-        this.age = age;
+-        this.name = name;
+-        this.yearBirthday = yearBirthday;
+-    }
+-public double HumanYears() {
+-    int result;
+-    result = 2022 - age;
+-    System.out.println(name + result);
+-
+-return result;
+-    }
+-
+-    public static void main(String[] args) {
+-        HomeTask7 homeTask7 = new HomeTask7(31, "Illiya", 1991);
+-        System.out.println(homeTask7.HumanYears());
+-    }
+-}
+-
+Index: src/Lesson5/Class/HomeTask5Class2.java
+===================================================================
+diff --git a/src/Lesson5/Class/HomeTask5Class2.java b/src/Lesson5/Class/HomeTask5Class2.java
+deleted file mode 100644
+--- a/src/Lesson5/Class/HomeTask5Class2.java	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
++++ /dev/null	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
+@@ -1,18 +0,0 @@
+-//Create 2 classes with the same name, but put them in different packages. For example, com.domainname.modulename.
+-//Create a third class with the main method.
+-//In the main method create two different objects of your classes specifying the full name of the classes (including packages).
+-package Lesson5.Class;
+-
+-public class HomeTask5Class2 {
+-
+-    public static boolean comDomainnameModulename;
+-
+-    public static class comDomainnameModulename {
+-
+-        public comDomainnameModulename(int a, int b) {
+-        }
+-    }
+-int DomainName(int a, int b){
+- return a + b;     
+-}
+-}
+\ No newline at end of file
+Index: src/Lesson5/HomeTask7.java
+===================================================================
+diff --git a/src/Lesson5/HomeTask7.java b/src/Lesson5/HomeTask7.java
+deleted file mode 100644
+--- a/src/Lesson5/HomeTask7.java	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
++++ /dev/null	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
+@@ -1,11 +0,0 @@
+-package Lesson5;
+-//Answer the question: What is a package-private access? Create a simple program to demonstrate the package-private access.
+-//Tips:
+-// - Create two different packages
+-// - Create 3 classes. 2 classes should be in the first package, 3rd class - in the second package.
+-// - Create in one of the classes some package-private members(fields or methods).
+-// - In another two classes create objects of the class with package-private members and try to access its members.
+-public class HomeTask7 {
+-
+-}
+-
+Index: src/Lesson7/RemoteDevice/RemoteController.java
+===================================================================
+diff --git a/src/Lesson7/RemoteDevice/RemoteController.java b/src/Lesson7/RemoteDevice/RemoteController.java
+deleted file mode 100644
+--- a/src/Lesson7/RemoteDevice/RemoteController.java	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
++++ /dev/null	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
+@@ -1,38 +0,0 @@
+-package Lesson7.RemoteDevice;
+-
+-public class RemoteController implements Device,Volume {
+-    @Override
+-    public void powerOn() {
+-        System.out.println();
+-    }
+-
+-    @Override
+-    public void powerOff() {
+-
+-    }
+-
+-    @Override
+-    public int setChannel() {
+-        return 0;
+-    }
+-
+-    @Override
+-    public void currentChanel() {
+-
+-    }
+-
+-    @Override
+-    public void upVolume() {
+-
+-    }
+-
+-    @Override
+-    public void downVolume() {
+-
+-    }
+-
+-    @Override
+-    public void mute() {
+-
+-    }
+-}
+Index: src/Lesson5/HomeTask12.java
+===================================================================
+diff --git a/src/Lesson5/HomeTask12.java b/src/Lesson5/HomeTask12.java
+deleted file mode 100644
+--- a/src/Lesson5/HomeTask12.java	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
++++ /dev/null	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
+@@ -1,81 +0,0 @@
+-package Lesson5;
+-
+-public class HomeTask12 {
+-
+-    public static class Cat {
+-        private String name;
+-        private int age;
+-        private int weight;
+-        private String breed;
+-        private String anatomy;
+-
+-        Cat(String name, int age, int weight, String breed, String anatomy) {
+-            this.name = name;
+-            this.age = age;
+-            this.weight = weight;
+-            this.breed = breed;
+-            this.anatomy = anatomy;
+-        }
+-
+-        public Cat() {
+-
+-        }
+-
+-        public void SayMeow() {
+-            System.out.println("Мяу!");
+-        }
+-
+-        public String getName() {
+-            return name;
+-        }
+-        public void setName(String name) {
+-            this.name = name;
+-        }
+-        public int getAge() {
+-            return age;
+-        }
+-            public void setAge(int age) {
+-                this.age = age;
+-
+-        }
+-        public int getWeight() {
+-            return weight;
+-        }
+-            public int setWeight(int weight) {
+-                return weight;
+-        }
+-        public String getBreed() {
+-            return breed;
+-        }
+-        public String setBreed(String breed) {
+-            return breed ;
+-
+-        }
+-        public String getAnatomy() {
+-            return anatomy;
+-
+-        }
+-        public void setAnatomy(String anatomy) {
+-            this.anatomy = anatomy;
+-
+-        }
+-        public static void main(String[] args) {
+-
+-            Cat barsik = new Cat("barsik",4,5,"Lion","Normal");
+-            String barsikName = barsik.getName();
+-            int barsikAge = barsik.getAge();
+-            int barsikWeight = barsik.getWeight();
+-            String barsikBreed = barsik.getBreed();
+-            String barsikAnatomy = barsik.getAnatomy();
+-            System.out.println("Имя кота: " + barsikName);
+-            System.out.println("Возраст кота: " + barsikAge);
+-            System.out.println("Вес кота: " + barsikWeight);
+-            System.out.println("Порода кота: " + barsikBreed);
+-            System.out.println("Анатомия кота: " + barsikAnatomy);
+-        }
+-    }
+-    }
+-
+-
+-
+-
+Index: src/Lesson6/HomeTask3.java
+===================================================================
+diff --git a/src/Lesson6/HomeTask3.java b/src/Lesson6/HomeTask3.java
+deleted file mode 100644
+--- a/src/Lesson6/HomeTask3.java	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
++++ /dev/null	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
+@@ -1,115 +0,0 @@
+-package Lesson6;
+-
+-
+-     class Vehicle {
+-        private String name;
+-        private String size;
+-        private int currentVelocity;
+-        private int currentDirection;
+-
+-        public Vehicle(String name, String size) {
+-            this.name = name;
+-            this.size = size;
+-            this.currentVelocity = 0;
+-            this.currentDirection = 0;
+-        }
+-
+-        public void steer(int direction) {
+-            this.currentDirection += direction;
+-            System.out.println("Vehicle.steer(): Steering at " + currentDirection + " degrees.");
+-        }
+-
+-        public void move(int velocity, int direction) {
+-            currentVelocity = velocity;
+-            currentDirection = direction;
+-            System.out.println("Vehicle.move(): Moving at " + currentVelocity + " in direction " + currentDirection);
+-        }
+-        public String getName() {
+-            return name;
+-        }
+-
+-        public String getSize() {
+-            return size;
+-        }
+-
+-        public int getCurrentVelocity() {
+-            return currentVelocity;
+-        }
+-
+-        public int getCurrentDirection() {
+-            return currentDirection;
+-        }
+-
+-        public void stop() {
+-            this.currentVelocity = 0;
+-        }
+-    }
+-
+-class Car extends Vehicle {
+-
+-    private int wheels;
+-    private int doors;
+-    private int gearbox;
+-    private boolean isManual;
+-
+-    private int currentGear;
+-
+-    public Car(String name, String size, int wheels, int doors, int gears, boolean isManual) {
+-        super(name, size);
+-        this.wheels = wheels;
+-        this.doors = doors;
+-        this.gearbox = gearbox;
+-        this.isManual = isManual;
+-        this.currentGear = 1;
+-    }
+-    public void changeGear(int currentGear) {
+-        this.currentGear = currentGear;
+-        System.out.println("Car.setCurrentGear(): Change to " + this.currentGear + " gear.");
+-    }
+-
+-    public void changeVelocity(int speed, int direction) {
+-        move(speed, direction);
+-        System.out.println("Car.changeVelocity(): Velocity " + speed + " direction " + direction);
+-    }
+-}
+-class Outlander extends Car {
+-
+-    private int roadServiceMonths;
+-
+-    public Outlander(int roadServiceMonths) {
+-        super("Outlander", "4WD", 5, 5, 6, false);
+-        this.roadServiceMonths = roadServiceMonths;
+-    }
+-
+-    public void accelerate(int rate) {
+-
+-        int newVelocity = getCurrentVelocity() + rate;
+-        if (newVelocity == 0) {
+-            stop();
+-            changeGear(1);
+-        } else if (newVelocity > 0 && newVelocity <= 10) {
+-            changeGear(1);
+-        } else if (newVelocity > 10 && newVelocity <= 20) {
+-            changeGear(2);
+-        } else if (newVelocity > 20 && newVelocity <= 30) {
+-            changeGear(3);
+-        } else {
+-            changeGear(4);
+-        }
+-
+-        if (newVelocity > 0) {
+-            changeVelocity(newVelocity, getCurrentDirection());
+-        }
+-    }
+-}
+-class Main {
+-
+-    public static void main(String[] args) {
+-
+-        Outlander outlander = new Outlander(36);
+-        outlander.steer(45);
+-        outlander.accelerate(30);
+-        outlander.accelerate(20);
+-        outlander.accelerate(-42);
+-    }
+-}
+\ No newline at end of file
+Index: src/Lesson3/HomeTask4.java
+===================================================================
+diff --git a/src/Lesson3/HomeTask4.java b/src/Lesson3/HomeTask4.java
+deleted file mode 100644
+--- a/src/Lesson3/HomeTask4.java	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
++++ /dev/null	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
+@@ -1,14 +0,0 @@
+-// Given a string "ABCDEFGHIJK". You need to make this string lowercased and remove all vowels.
+-
+-package Lesson3;
+-
+-import java.util.Locale;
+-
+-public class HomeTask4 {
+-    public static void main(String[] args){
+-   String word = "ABCDEFGHIJK";
+-   word = word.toLowerCase(Locale.ROOT);
+-   System.out.println(word.replaceAll("[aeiou]\\B", ""));
+-
+-    }
+-}
+Index: src/Lesson7/Converter.java
+===================================================================
+diff --git a/src/Lesson7/Converter.java b/src/Lesson7/Converter.java
+deleted file mode 100644
+--- a/src/Lesson7/Converter.java	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
++++ /dev/null	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
+@@ -1,42 +0,0 @@
+-package Lesson7;
+-
+-public interface Converter {
+-
+-
+-    void fah();
+-
+-    public static double convert(double fah) {
+-        double convert;
+-        double cel = (5/9) * fah -32;
+-        return fah;
+-    }
+-
+-
+-
+-class KelvinConverter implements Converter{
+-    public void Kelvin() {
+-        System.out.println("Result " );
+-
+-    }
+-
+-
+-
+-    public void fah() {
+-
+-    }
+-}
+-
+-class FahrenheitConverter implements Converter{
+-
+-
+-
+-    public void fah() {
+-
+-    }
+-}
+-
+-    public static void main(String[] args) {
+-     KelvinConverter kelvinConverter = new KelvinConverter();
+-
+-    }
+-}
+\ No newline at end of file
+Index: src/Lesson7/RemoteDevice/Device.java
+===================================================================
+diff --git a/src/Lesson7/RemoteDevice/Device.java b/src/Lesson7/RemoteDevice/Device.java
+deleted file mode 100644
+--- a/src/Lesson7/RemoteDevice/Device.java	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
++++ /dev/null	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
+@@ -1,8 +0,0 @@
+-package Lesson7.RemoteDevice;
+-
+-public interface Device {
+-    void powerOn();
+-    void powerOff();
+-    int setChannel();
+-    void currentChanel();
+-}
+Index: src/Lesson2/HomeTask6.java
+===================================================================
+diff --git a/src/Lesson2/HomeTask6.java b/src/Lesson2/HomeTask6.java
+deleted file mode 100644
+--- a/src/Lesson2/HomeTask6.java	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
++++ /dev/null	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
+@@ -1,15 +0,0 @@
+-package Lesson2;
+-
+-public class HomeTask6 {
+-    public static void main(String[] args){
+-        System.out.println("********\n********\n********\n********\n********\n********\n********\n********\n"+ "       ");
+-
+-
+-
+-
+-        System.out.println("********\n"+"*"+" "+" "+" "+" "+" "+" "+"*\n"+"*"+" "+" "+" "+" "+" "+" "+"*"+"\n*"+" "+" "+" "+" "+" "+" "+"*"+"\n********"+"       \n");
+-
+-        System.out.println("*\n"+"**\n"+"***\n"+"****\n"+"*****\n"+"******\n"+"*******\n"+"       ");
+-        System.out.println("      *  \n"+"     ***  \n"+"    *****  \n"+"   *******\n"+"  *********\n");
+-}
+-}
+\ No newline at end of file
+Index: src/Lesson2/HomeTask7.java
+===================================================================
+diff --git a/src/Lesson2/HomeTask7.java b/src/Lesson2/HomeTask7.java
+deleted file mode 100644
+--- a/src/Lesson2/HomeTask7.java	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
++++ /dev/null	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
+@@ -1,17 +0,0 @@
+-package Lesson2;
+-
+-public class HomeTask7 {
+-    public static void main(String[] args) {
+-        int[] array = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+-        int sum = 0;
+-        for (int i = 0; i < array.length; i++) {
+-            if (i == 0) continue;
+-            if (i == array.length - 1) continue;
+-            sum = sum + array[i];
+-
+-        }
+-        System.out.println(sum);
+-    }
+-
+-}
+-
+Index: src/Lesson3/HomeTask3.java
+===================================================================
+diff --git a/src/Lesson3/HomeTask3.java b/src/Lesson3/HomeTask3.java
+deleted file mode 100644
+--- a/src/Lesson3/HomeTask3.java	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
++++ /dev/null	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
+@@ -1,15 +0,0 @@
+-// Given two strings. Check if they start with "The".
+-//
+-//   Task: word1 = "The End", word2="End The";
+-//
+-package Lesson3;
+-
+-public class HomeTask3 {
+-    public static void main(String[] args) {
+-        String word1 = "The End";
+-        String word2 = "End The";
+-    System.out.println(word1.startsWith("The"));
+-        System.out.println(word2.startsWith("The"));
+-    }
+-
+-}
+Index: src/Lesson6/HomeTask2.java
+===================================================================
+diff --git a/src/Lesson6/HomeTask2.java b/src/Lesson6/HomeTask2.java
+deleted file mode 100644
+--- a/src/Lesson6/HomeTask2.java	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
++++ /dev/null	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
+@@ -1,46 +0,0 @@
+-package Lesson6;
+-
+-public class HomeTask2 {
+-    public static void main(String[] args) {
+-    }
+-}
+-
+-    class Clerk extends Employee{
+-
+-    }
+-
+-     class IT extends Employee{
+-
+-    }
+-
+-     class Programmer extends IT {
+-
+-    }
+-
+-     class ProjectManager extends IT{
+-
+-    }
+-     class TechnicalDirector extends IT{
+-
+-}
+-     class CTO  {
+-
+-    }
+-
+-     class OfficeManager extends Clerk {
+-
+-    }
+-
+-     class HR extends Clerk {
+-
+-    }
+-
+-     class Cleaner extends Clerk {
+-
+-    }
+-    class Employee {
+-
+-    }
+-
+-
+-
+Index: src/Lesson8/HomeTask4.java
+===================================================================
+diff --git a/src/Lesson8/HomeTask4.java b/src/Lesson8/HomeTask4.java
+deleted file mode 100644
+--- a/src/Lesson8/HomeTask4.java	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
++++ /dev/null	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
+@@ -1,18 +0,0 @@
+-package Lesson8;
+-
+-public class HomeTask4 {
+-    public static void main(String[] args) {
+-        try {
+-            int a = 0;
+-            int b = 4 / a;
+-        } catch (ArithmeticException e) {
+-            System.out.println("Делить на ноль нельзя");
+-            e.printStackTrace();
+-        } catch (Exception e )
+-        {
+-            e.printStackTrace();
+-
+-        }
+-    }
+-}
+-
+Index: src/Lesson2/HomeTask1.java
+===================================================================
+diff --git a/src/Lesson2/HomeTask1.java b/src/Lesson2/HomeTask1.java
+deleted file mode 100644
+--- a/src/Lesson2/HomeTask1.java	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
++++ /dev/null	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
+@@ -1,12 +0,0 @@
+-package Lesson2;
+-
+-public class HomeTask1 {
+-    public static void main(String[] args) {
+-        int firstNumber= 17;
+-        int secondNumber = 23;
+-        System.out.println(firstNumber - secondNumber);
+-        System.out.println(firstNumber + secondNumber);
+-        System.out.println(firstNumber * secondNumber);
+-        System.out.println(firstNumber / secondNumber);
+-    }
+-}
+Index: src/Lesson5/HomeTask6.java
+===================================================================
+diff --git a/src/Lesson5/HomeTask6.java b/src/Lesson5/HomeTask6.java
+deleted file mode 100644
+--- a/src/Lesson5/HomeTask6.java	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
++++ /dev/null	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
+@@ -1,15 +0,0 @@
+-package Lesson5;
+-
+-import java.lang.*;
+-
+-
+-public class HomeTask6 {
+-
+-
+-    public class NewClas extends Car {
+-
+-public void main(String[] args) {
+-
+-}
+-    }
+-}
+\ No newline at end of file
+Index: src/Lesson4/TestClass.java
+===================================================================
+diff --git a/src/Lesson4/TestClass.java b/src/Lesson4/TestClass.java
+deleted file mode 100644
+--- a/src/Lesson4/TestClass.java	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
++++ /dev/null	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
+@@ -1,19 +0,0 @@
+-//Create a class StaticCalculator. It should have three fields: double firstValue, double secondValue and String operation.
+-//Create all required constructors to properly initialize your object.
+-//Consider the case when user does not provide any parameters when creates a new object.
+-//Write a method "calculate" that takes these two values and return the result of the calculation according to the operation.
+-//Write the test class which contains the main method.
+-//In this main method you should create your StaticCalculator object and do some calculation to test your code,
+-//by calling your "calculate" method.
+-//Print all results to the console.
+-package Lesson4;
+-
+-
+-
+-public class TestClass {
+-    public static void main(String[] args) {
+-StaticCalculator staticCalculator = new StaticCalculator(  320, 47, "*");
+-System.out.println(staticCalculator.Calculation());
+-
+-    }
+-}
+Index: src/Lesson5/HomeTask13.java
+===================================================================
+diff --git a/src/Lesson5/HomeTask13.java b/src/Lesson5/HomeTask13.java
+deleted file mode 100644
+--- a/src/Lesson5/HomeTask13.java	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
++++ /dev/null	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
+@@ -1,63 +0,0 @@
+-//What is the different between static and non-static field of a class?
+-//Create an example to demonstrate this concept.
+-package Lesson5;
+-
+-class Helper {
+-
+-    // Non-static method
+-    public int sum(int a, int b)
+-    {
+-        // Returning sum of numbers
+-        return a + b;
+-    }
+-}
+-
+-// Class 2
+-// Main class
+-class GFG {
+-
+-    // Main driver method
+-    public static void main(String[] args)
+-    {
+-        // Input integers to be summed up
+-        int n = 3;
+-        int m = 6;
+-
+-        // Creating object of above class
+-        Helper g = new Helper();
+-
+-        // Calling above method to compute sum
+-        int s = g.sum(n, m);
+-
+-        // Calling the non-static method
+-        System.out.print("sum is = " + s);
+-    }
+-    public static int sum(int a, int b)
+-    {
+-        // Simply returning the sum
+-        return a + b;
+-    }
+-}
+-
+-// Class 2
+-class GFG1 {
+-
+-    // Main driver method
+-    public static void main(String[] args)
+-    {
+-        // Custom values for integer
+-        // to be summed up
+-        int n = 3, m = 6;
+-
+-        // Calling the static method of above class
+-        // and storing sum in integer variable
+-        int s = GFG.sum(n, m);
+-
+-        // Print and display the sum
+-        System.out.print("sum is = " + s);
+-    }
+-}
+-
+-
+-
+-
+Index: src/Lesson6/HomeTask4.java
+===================================================================
+diff --git a/src/Lesson6/HomeTask4.java b/src/Lesson6/HomeTask4.java
+deleted file mode 100644
+--- a/src/Lesson6/HomeTask4.java	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
++++ /dev/null	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
+@@ -1,38 +0,0 @@
+-package Lesson6;
+-
+-class a {
+-    String nameMan;
+-    String nameWoman;
+-
+-       a(String nameMan, String nameWoman) {
+-           this.nameMan = "Bill";
+-           this.nameWoman = "Jesica";
+-       }
+-
+-       public void family(String nameMan,String nameWoman) {
+-           System.out.println("Husband" + this.nameMan + "Married on " + this.nameWoman);
+-       }
+-
+-       public void life() {
+-           System.out.println("They are family");
+-
+-
+-       }
+-
+-        static class B extends a {
+-
+-           B(String nameMan, String nameWoman) {
+-               super(nameMan, nameWoman);
+-
+-
+-           }
+-
+-           public static void main(String[] args) {
+-               a nameMan = new a("Default","Default");
+-           System.out.println(nameMan);
+-           }
+-       }
+-   }
+-
+-
+-
+Index: src/Lesson4/StaticCalculator.java
+===================================================================
+diff --git a/src/Lesson4/StaticCalculator.java b/src/Lesson4/StaticCalculator.java
+deleted file mode 100644
+--- a/src/Lesson4/StaticCalculator.java	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
++++ /dev/null	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
+@@ -1,47 +0,0 @@
+-//Create a class StaticCalculator. It should have three fields: double firstValue, double secondValue and String operation.
+-//Create all required constructors to properly initialize your object.
+-//Consider the case when user does not provide any parameters when creates a new object.
+-//Write a method "calculate" that takes these two values and return the result of the calculation according to the operation.
+-//Write the test class which contains the main method.
+-//In this main method you should create your StaticCalculator object and do some calculation to test your code,
+-//by calling your "calculate" method.
+-//Print all results to the console.
+-package Lesson4;
+-
+-public class StaticCalculator {
+-    double firstValue;
+-    double secondValue;
+-    String operation;
+-
+-
+-    public StaticCalculator(double a,double b,String c) {
+-        firstValue = a;
+-        secondValue = b;
+-        operation = c;
+-
+-    }
+-
+-    public double Calculation() {
+-    double result = 0;
+-        switch (operation) {
+-            case "+":
+-                result = firstValue + secondValue;
+-                break;
+-            case "-":
+-                result = firstValue - secondValue;
+-                break;
+-            case "*":
+-                result = firstValue * secondValue;
+-                break;
+-            case "/":
+-                result = firstValue / secondValue;
+-                break;
+-
+-        }
+-        return result;
+-        }
+-
+-
+-}
+-
+-
+Index: src/Lesson5/HomeTask11.java
+===================================================================
+diff --git a/src/Lesson5/HomeTask11.java b/src/Lesson5/HomeTask11.java
+deleted file mode 100644
+--- a/src/Lesson5/HomeTask11.java	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
++++ /dev/null	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
+@@ -1,4 +0,0 @@
+-package Lesson5;
+-
+-public class HomeTask11 {
+-}
+Index: src/Lesson2/HomeTask5.java
+===================================================================
+diff --git a/src/Lesson2/HomeTask5.java b/src/Lesson2/HomeTask5.java
+deleted file mode 100644
+--- a/src/Lesson2/HomeTask5.java	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
++++ /dev/null	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
+@@ -1,12 +0,0 @@
+-package Lesson2;
+-
+-public class HomeTask5 {
+-    public static void main(String[] args){
+-        int n,fact=1;
+-        int number=10;
+-        for(n=1;n<=number;n++){
+-            fact=fact*n;
+-            System.out.println("Factorial of "+number+" is: "+fact);
+-        }
+-    }
+-}
+Index: src/Lesson3/HomeTask2.java
+===================================================================
+diff --git a/src/Lesson3/HomeTask2.java b/src/Lesson3/HomeTask2.java
+deleted file mode 100644
+--- a/src/Lesson3/HomeTask2.java	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
++++ /dev/null	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
+@@ -1,19 +0,0 @@
+-//2. The web is built with HTML strings like "<i>Hello</i>" which draws Hello as italic text. In this example, the "i" tag makes <i> and </i> which surround the word "Hello".
+-    //    Given a tag and a word string, create the HTML string with tags around the word, e.g. "<i>Hello</i>".
+-      //  For example:
+-        //tag=h1, words=Java Tutorials -> <h1>Java Tutorials</h1>
+-//     Task: word = Welcome to Java World, tag=p
+-package Lesson3;
+-
+-public class HomeTask2 {
+-    public static void main(String[] args) {
+-String words = "Welcome to Java World";
+-String tag = "h1";
+-System.out.println(("<"+tag+">" + words +  "</" + tag + ">"));
+-}
+-  }
+-
+-
+-
+-  //
+-//
+\ No newline at end of file
+Index: src/Lesson5/HomeTask14.java
+===================================================================
+diff --git a/src/Lesson5/HomeTask14.java b/src/Lesson5/HomeTask14.java
+deleted file mode 100644
+--- a/src/Lesson5/HomeTask14.java	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
++++ /dev/null	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
+@@ -1,9 +0,0 @@
+-//How can you create a constant in Java, that will be available for everyone outside your class or package?
+-package Lesson5;
+-
+-public class HomeTask14 {
+-
+-        public static final double PI = 3.14;
+-    }
+-
+-
+Index: src/Lesson3/HomeTask6.java
+===================================================================
+diff --git a/src/Lesson3/HomeTask6.java b/src/Lesson3/HomeTask6.java
+deleted file mode 100644
+--- a/src/Lesson3/HomeTask6.java	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
++++ /dev/null	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
+@@ -1,23 +0,0 @@
+-//6. Given a user's email address: john_smith@example.com. Create two strings "login" and "domain" which will be substrings of full email address.
+-//   The First Name and Last Name of the user should be in the following format: "Name Surname".
+-//   Result should be:
+-//   login = "John Smith"
+-//   domain = "example.com"
+-package Lesson3;
+-
+-public class HomeTask6 {
+-    public static void main(String[] args) {
+-        String email = "john_smith@example.com";
+-        int index = email.indexOf("@");
+-        String name = email.substring(0, index);
+-        String domain = email.substring(index + 1, email.length());
+-
+-        String[] splitedName = name.split("_");
+-        String firstName = splitedName[0];
+-        String lastName = splitedName[1];
+-        firstName = firstName.substring(0,1).toUpperCase()+firstName.substring(1);
+-        lastName = lastName.substring(0,1).toUpperCase()+lastName.substring(1);
+-        System.out.println("// login  = : "  + firstName + " " + lastName );
+-        System.out.println("// domain = : " +  domain);
+-    }
+-}
+Index: src/Lesson7/RemoteDevice/TVDevice.java
+===================================================================
+diff --git a/src/Lesson7/RemoteDevice/TVDevice.java b/src/Lesson7/RemoteDevice/TVDevice.java
+deleted file mode 100644
+--- a/src/Lesson7/RemoteDevice/TVDevice.java	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
++++ /dev/null	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
+@@ -1,6 +0,0 @@
+-package Lesson7.RemoteDevice;
+-
+-public  abstract class TVDevice implements Volume,Device {
+-private String modelName;
+-private boolean isOn;
+-}
+Index: src/Lesson6/HomeTask1.java
+===================================================================
+diff --git a/src/Lesson6/HomeTask1.java b/src/Lesson6/HomeTask1.java
+deleted file mode 100644
+--- a/src/Lesson6/HomeTask1.java	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
++++ /dev/null	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
+@@ -1,41 +0,0 @@
+-package Lesson6;
+-
+-
+-
+-class A{     //Створюєм класс.
+-    public int Sum(int firstNumber, int secondNumber){   //
+-        return firstNumber + secondNumber;
+-    }
+-}
+-
+-class B{
+-    public void Print(String message){
+-        System.out.println(message);
+-    }
+-
+-    public void toString(int result) {
+-    }
+-}
+-
+-class C{
+-    private C mathOperator;
+-    private B consolePrinter;
+-
+-    public C()
+-    {
+-        this.mathOperator = new C();
+-        this.consolePrinter = new B();
+-    }
+-
+-    public int CalculateSum(int firstNumber, int secondNumber){
+-        int result = mathOperator.CalculateSum(firstNumber, secondNumber);
+-        consolePrinter.Print(result+"");
+-        return result;
+-    }
+-
+-
+-    public static void main(String[]args){
+-        C c = new C();
+-c.CalculateSum(1, 2);
+-    }
+-}
+Index: src/Lesson5/HomeTask1.java
+===================================================================
+diff --git a/src/Lesson5/HomeTask1.java b/src/Lesson5/HomeTask1.java
+deleted file mode 100644
+--- a/src/Lesson5/HomeTask1.java	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
++++ /dev/null	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
+@@ -1,27 +0,0 @@
+-package Lesson5;
+-
+-public class HomeTask1 {
+-}
+-class Car {
+-
+-    // Class member variable
+-    int speed;
+-
+-    // Constructor
+-    Car()
+-    {
+-
+-        // Print statement when constructor is called
+-        System.out.println("Speed of Car: " + speed);
+-    }
+-    // Block
+-    {
+-        speed = 60;
+-    }
+-    // Class member method
+-    public void main(String[] args)
+-    {
+-
+-        Car obj = new Car();
+-    }
+-}
+\ No newline at end of file
+Index: src/Lesson3/HomeTask5.java
+===================================================================
+diff --git a/src/Lesson3/HomeTask5.java b/src/Lesson3/HomeTask5.java
+deleted file mode 100644
+--- a/src/Lesson3/HomeTask5.java	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
++++ /dev/null	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
+@@ -1,20 +0,0 @@
+-//5. Given 2 strings, a and b. Create a string c of the form short+long+short, with the shorter string on the outside and the longer string on the inside.
+-//
+-//   Task: a = "hop", b = "hello"
+-package Lesson3;
+-
+-public class HomeTask5 {
+-    public static void main(String[] args) {
+-
+-        String a = "hop";
+-        String b = "hello";
+-        int len1 = a.length();
+-        int len2 = b.length();
+-        if (len1 > len2) {
+-            System.out.println("error");
+-        }
+-            else {
+-            System.out.println(a + " " + b + " " + a);
+-            }
+-        }
+-    }
+Index: src/Lesson4/Car.java
+===================================================================
+diff --git a/src/Lesson4/Car.java b/src/Lesson4/Car.java
+deleted file mode 100644
+--- a/src/Lesson4/Car.java	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
++++ /dev/null	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
+@@ -1,14 +0,0 @@
+-package Lesson4;
+-
+-public class Car {
+-    public String clas ;
+-    public int year ;
+-    public String model ;
+-
+-    public static void main(String[] args) {
+-    Engine engine = new Engine();
+-    return;
+-
+-    }
+-}
+-
+Index: src/Lesson4/HomeTask9.java
+===================================================================
+diff --git a/src/Lesson4/HomeTask9.java b/src/Lesson4/HomeTask9.java
+deleted file mode 100644
+--- a/src/Lesson4/HomeTask9.java	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
++++ /dev/null	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
+@@ -1,22 +0,0 @@
+-package Lesson4;
+-// Write your own example of the recursive function. You can find a lot of examples on the Internet.
+-public class HomeTask9 {
+-public static void main(String[]args){
+-int factorial = factorialExample(5);
+-System.out.println(factorial);
+-}
+-public static int factorialExample(int value) {
+-    if (value == 1)
+-    {
+-        return 1;
+-    }
+-
+-    return value * factorialExample(value - 1);
+-
+-
+-
+-    }
+-}
+-
+-
+-
+Index: src/Lesson4/Engine.java
+===================================================================
+diff --git a/src/Lesson4/Engine.java b/src/Lesson4/Engine.java
+deleted file mode 100644
+--- a/src/Lesson4/Engine.java	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
++++ /dev/null	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
+@@ -1,13 +0,0 @@
+-package Lesson4;
+-
+-public class Engine {
+-    public String type;
+-    public int power;
+-    public int consumption;
+-
+-    public static void main(String[] args) {
+-    }
+-}
+-
+-
+-
+Index: src/Lesson5/HomeTask10.java
+===================================================================
+diff --git a/src/Lesson5/HomeTask10.java b/src/Lesson5/HomeTask10.java
+deleted file mode 100644
+--- a/src/Lesson5/HomeTask10.java	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
++++ /dev/null	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
+@@ -1,5 +0,0 @@
+-package Lesson5;
+-//10. Створіть новий клас. Унеможливити створення нового об’єкта цього класу за допомогою конструктора.
+-//Надайте відповідний публічний метод, який дозволить клієнтам вашого класу створювати новий об’єкт
+-public class HomeTask10 {
+-}
+Index: src/Lesson4/Human.java
+===================================================================
+diff --git a/src/Lesson4/Human.java b/src/Lesson4/Human.java
+deleted file mode 100644
+--- a/src/Lesson4/Human.java	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
++++ /dev/null	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
+@@ -1,16 +0,0 @@
+-package Lesson4;
+-
+-public class Human {
+-    public int weight;
+-    public int age;
+-    public String firstName;
+-    public String lastName;
+-    public int height;
+-    public Human(int weight, int age, String first_name, String last_name, int height) {
+-        this.height = height;
+-        this.age = age;
+-        this.firstName = first_name;
+-        this.lastName = last_name;
+-        this.weight = weight;
+-    }
+-}
+Index: src/Lesson9/MyFileTXT.java
+===================================================================
+diff --git a/src/Lesson9/MyFileTXT.java b/src/Lesson9/MyFileTXT.java
+deleted file mode 100644
+--- a/src/Lesson9/MyFileTXT.java	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
++++ /dev/null	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
+@@ -1,74 +0,0 @@
+-package Lesson9;
+-
+-
+-import com.sun.deploy.util.OrderedHashSet;
+-
+-import java.io.File;
+-import java.io.FileNotFoundException;
+-import java.util.Scanner;
+-import java.util.*;
+-
+-
+-public class MyFileTXT {
+-
+-    public static void main(String[] args) throws FileNotFoundException {
+-        HashMap<String, List<String>> songWords = new HashMap<String, List<String>>();
+-        String separator = File.separator;
+-        String path = separator + "D:" + separator + "song.txt";
+-        File file = new File(path);
+-        Scanner scanner = new Scanner(file);
+-        while (scanner.hasNextLine()) {
+-            String line = scanner.nextLine();
+-            line = line.replaceAll("[,?!-.]", "").toLowerCase();
+-            String[] splited = line.split("\\s+");
+-            for (String word : splited) {
+-                List<String> sameWords = songWords.get(word.trim());
+-                if (sameWords != null) {
+-                    sameWords.add(word.trim());
+-                } else {
+-                    sameWords = new ArrayList<String>();
+-                    sameWords.add(word.trim());
+-                    songWords.put(word.trim(), sameWords);
+-                }
+-            }
+-            System.out.println(String.format("Amount of unique words: %s", songWords.size()));
+-            int bigestSize = 0;
+-            String bigestSizeKey = "";
+-            for (String key : songWords.keySet()) {
+-                List<String> sameWords = songWords.get(key);
+-                System.out.println(String.format("%s appeared in text %s times", key, sameWords.size()));
+-                if (sameWords.size() > bigestSize) {
+-                    bigestSize = sameWords.size();
+-                    bigestSizeKey = key;
+-                }
+-            }
+-            System.out.println(String.format("The most frequente word is: %s", bigestSizeKey));
+-        }
+-    }
+-}
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-//System.out.println(scanner.nextLine());
+-//String str = scanner.nextLine();
+-//String[] subStr;
+-//String delimeter = "-"; // Разделитель
+-//subStr = str.split(delimeter);
+-//for(int i = 0; i < subStr.length; i++) {
+-//System.out.println(subStr[i]);
+-
+-
+-
+-
+-
+-
+Index: src/Lesson2/HomeTask9.java
+===================================================================
+diff --git a/src/Lesson2/HomeTask9.java b/src/Lesson2/HomeTask9.java
+deleted file mode 100644
+--- a/src/Lesson2/HomeTask9.java	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
++++ /dev/null	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
+@@ -1,23 +0,0 @@
+-package Lesson2;
+-
+-public class HomeTask9 {
+-    public static void main(String[] args) {
+-        int[] array = new int[15];
+-        for (int i = 0; i < array.length; i++) {
+-            array[i] = (int) ((Math.random() * 30));
+-        }
+-        for (int out = array.length - 1; out >= 1; out--) {  //Внешний цикл
+-            for (int in = 0; in < out; in++) {       //Внутренний цикл
+-                if (array[in] < array[in + 1]) {              //Если порядок элементов нарушен
+-                    int dummy = array[in];
+-                    array[in] = array[in + 1];
+-                    array[in + 1] = dummy;
+-                }
+-            }
+-        }
+-        for (int i = 0; i < array.length; i++){
+-            System.out.println(array[i]);
+-        }
+-    }
+-}
+-
+Index: src/Lesson8/Main.java
+===================================================================
+diff --git a/src/Lesson8/Main.java b/src/Lesson8/Main.java
+deleted file mode 100644
+--- a/src/Lesson8/Main.java	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
++++ /dev/null	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
+@@ -1,22 +0,0 @@
+-package Lesson8;
+-
+-
+-public class Main {
+-
+-    public static void main(String[] args) {
+-        iCanThrowException(null);
+-
+-    }
+-
+-    public static void iCanThrowException(String param) {
+-        try {
+-            if (param == null) {
+-            }
+-            throw new NullPointerException(" :: Parameter 'param' was null inside method 'doSomething'.");
+-        } catch (NullPointerException e) {
+-        }
+-    }
+-    }
+-
+-
+-
+Index: src/Lesson2/HomeTask2.java
+===================================================================
+diff --git a/src/Lesson2/HomeTask2.java b/src/Lesson2/HomeTask2.java
+deleted file mode 100644
+--- a/src/Lesson2/HomeTask2.java	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
++++ /dev/null	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
+@@ -1,13 +0,0 @@
+-package Lesson2;
+-
+-public class HomeTask2 {
+-    public static void main(String[] args) {
+-        int length = 5;
+-        int width = 10;
+-        double radius = 6;
+-        System.out.println (Math.PI * (radius * radius));
+-        System.out.println(length*width);
+-    }
+-
+-}
+-
+Index: src/Lesson8/HomeTask1.java
+===================================================================
+diff --git a/src/Lesson8/HomeTask1.java b/src/Lesson8/HomeTask1.java
+deleted file mode 100644
+--- a/src/Lesson8/HomeTask1.java	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
++++ /dev/null	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
+@@ -1,37 +0,0 @@
+-package Lesson8;
+-
+-
+-
+-public class HomeTask1 {
+-    int number;
+-
+-    public void method(int value) {
+-        number = value;
+-        if (number < 0) {
+-            System.out.println("Number < 0");
+-        }
+-        if (number > 0) {
+-            System.out.println("Number > 0");
+-        }
+-        if (number == 0) {
+-            try {
+-                throw new ArithmeticException("Error example");
+-            } catch (ArithmeticException e) {
+-                System.out.println("Exception");
+-            }
+-
+-
+-                }
+-            }
+-
+-
+-
+-            public static void main(String[] args) {
+-    HomeTask1 homeTask1 = new HomeTask1();
+-    homeTask1.method(0);
+-
+-
+-    }
+-}
+-
+-
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"d75180a2-5140-4e49-a075-22e159ba6117\" name=\"Changes\" comment=\"\">\r\n      <change afterPath=\"$PROJECT_DIR$/../untitled/untitled.iml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/../untitled1/untitled1.iml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/../untitled2/untitled2.iml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/Lesson9/MyFileTXT.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/Lesson9/MyFileTXT.java\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Interface\" />\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n    <option name=\"ROOT_SYNC\" value=\"SYNC\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProblemsViewState\">\r\n    <option name=\"selectedTabId\" value=\"CurrentFile\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2CGlfbg7UXz2GTzfdxolO7Wg0gY\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,\r\n    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,\r\n    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,\r\n    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,\r\n    &quot;last_opened_file_path&quot;: &quot;C:/Users/Kravchenko Illiya/IdeaProjects/TestAutomation&quot;,\r\n    &quot;settings.editor.selected.configurable&quot;: &quot;Console&quot;\r\n  }\r\n}</component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\Kravchenko Illiya\\IdeaProjects\\TestAutomation\\src\\Lesson1\" />\r\n      <recent name=\"C:\\Users\\Kravchenko Illiya\\IdeaProjects\\TestAutomation\\src\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\" selected=\"Application.MyFileTXT\">\r\n    <configuration name=\"Example\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"Lesson8.Example\" />\r\n      <module name=\"TestAutomation\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"Lesson8.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"Lesson8.HomeTask5$Main\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"Lesson8.HomeTask5$Main\" />\r\n      <module name=\"TestAutomation\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"Lesson8.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"Lesson8.Main\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"Lesson8.Main\" />\r\n      <module name=\"TestAutomation\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"Lesson8.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"Lesson8.keyboard\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"Lesson8.keyboard\" />\r\n      <module name=\"TestAutomation\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"Lesson8.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"MyFileTXT\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"Lesson9.MyFileTXT\" />\r\n      <module name=\"TestAutomation\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"Lesson9.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"Application.MyFileTXT\" />\r\n        <item itemvalue=\"Application.Example\" />\r\n        <item itemvalue=\"Application.Lesson8.keyboard\" />\r\n        <item itemvalue=\"Application.Lesson8.Main\" />\r\n        <item itemvalue=\"Application.Lesson8.HomeTask5$Main\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"d75180a2-5140-4e49-a075-22e159ba6117\" name=\"Changes\" comment=\"\" />\r\n      <created>1658436910240</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1658436910240</updated>\r\n    </task>\r\n    <servers />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"XDebuggerManager\">\r\n    <breakpoint-manager>\r\n      <breakpoints>\r\n        <line-breakpoint enabled=\"true\" type=\"java-method\">\r\n          <url>file://$PROJECT_DIR$/src/Lesson1/HomeTask6.java</url>\r\n          <line>1</line>\r\n          <properties class=\"HomeTask6\">\r\n            <option name=\"EMULATED\" value=\"true\" />\r\n            <option name=\"WATCH_EXIT\" value=\"false\" />\r\n          </properties>\r\n          <option name=\"timeStamp\" value=\"1\" />\r\n        </line-breakpoint>\r\n        <breakpoint enabled=\"true\" type=\"java-exception\">\r\n          <properties class=\"java.lang.ArrayIndexOutOfBoundsException\" package=\"java.lang\" />\r\n          <option name=\"timeStamp\" value=\"2\" />\r\n        </breakpoint>\r\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\r\n          <url>file://$PROJECT_DIR$/src/Lesson3/HomeTask6.java</url>\r\n          <line>9</line>\r\n          <option name=\"timeStamp\" value=\"11\" />\r\n        </line-breakpoint>\r\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\r\n          <url>file://$PROJECT_DIR$/src/Lesson8/HomeTask1.java</url>\r\n          <line>4</line>\r\n          <option name=\"timeStamp\" value=\"91\" />\r\n        </line-breakpoint>\r\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\r\n          <url>file://$PROJECT_DIR$/src/Lesson8/HomeTask4.java</url>\r\n          <line>2</line>\r\n          <option name=\"timeStamp\" value=\"95\" />\r\n        </line-breakpoint>\r\n      </breakpoints>\r\n    </breakpoint-manager>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 53fd5cd59b2bf7af1c8794dbd7160b3cd2da87c8)
++++ b/.idea/workspace.xml	(date 1663575504131)
+@@ -5,11 +5,98 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="d75180a2-5140-4e49-a075-22e159ba6117" name="Changes" comment="">
++      <change afterPath="$PROJECT_DIR$/../Automation/.idea/compiler.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../Automation/.idea/jarRepositories.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../Automation/.idea/misc.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../Automation/.idea/vcs.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../Automation/.idea/workspace.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../Automation/pom.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../Automation/src/main/java/org/example/App.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../Automation/src/test/java/org/example/AppTest.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../CourseQA/.idea/.gitignore" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../CourseQA/.idea/compiler.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../CourseQA/.idea/encodings.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../CourseQA/.idea/jarRepositories.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../CourseQA/.idea/misc.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../CourseQA/.idea/vcs.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../CourseQA/pom.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/../CourseQA/src/test/java/org/example/AppTest.java" afterDir="false" />
+       <change afterPath="$PROJECT_DIR$/../untitled/untitled.iml" afterDir="false" />
+       <change afterPath="$PROJECT_DIR$/../untitled1/untitled1.iml" afterDir="false" />
+       <change afterPath="$PROJECT_DIR$/../untitled2/untitled2.iml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/Lesson9/MyFileTXT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lesson9/MyFileTXT.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Lesson2/HomeTask1.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Lesson2/HomeTask2.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Lesson2/HomeTask3.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Lesson2/HomeTask4.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Lesson2/HomeTask5.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Lesson2/HomeTask6.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Lesson2/HomeTask7.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Lesson2/HomeTask8.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Lesson2/HomeTask9.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Lesson3/HomeTask1.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Lesson3/HomeTask2.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Lesson3/HomeTask3.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Lesson3/HomeTask4.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Lesson3/HomeTask5.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Lesson3/HomeTask6.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Lesson3/HomeTask7.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Lesson3/HomeTask8.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Lesson4/Boxer.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Lesson4/Car.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Lesson4/Engine.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Lesson4/HomeTask10.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Lesson4/HomeTask5.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Lesson4/HomeTask6.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Lesson4/HomeTask7.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Lesson4/HomeTask9.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Lesson4/Human.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Lesson4/Human1.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Lesson4/StaticCalculator.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Lesson4/TestClass.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Lesson4/Wheel.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Lesson5/Class/HomeTask5Class2.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Lesson5/HomeTask1.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Lesson5/HomeTask10.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Lesson5/HomeTask11.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Lesson5/HomeTask12.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Lesson5/HomeTask13.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Lesson5/HomeTask14.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Lesson5/HomeTask2.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Lesson5/HomeTask3.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Lesson5/HomeTask4.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Lesson5/HomeTask5Class1.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Lesson5/HomeTask6.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Lesson5/HomeTask7.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Lesson5/HomeTask8.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Lesson5/HomeTask9.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Lesson5/Myclass.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Lesson5/Package1/Class1.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Lesson5/Package1/Class2.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Lesson5/Package2/Class3.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Lesson5/Test.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Lesson6/Figure.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Lesson6/HomeTask1.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Lesson6/HomeTask2.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Lesson6/HomeTask3.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Lesson6/HomeTask4.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Lesson7/Converter.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Lesson7/Flyable.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Lesson7/RemoteDevice/Device.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Lesson7/RemoteDevice/Main.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Lesson7/RemoteDevice/RemoteController.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Lesson7/RemoteDevice/TV.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Lesson7/RemoteDevice/TVDevice.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Lesson7/RemoteDevice/Volume.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Lesson7/Volume.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Lesson8/Example.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Lesson8/HomeTask1.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Lesson8/HomeTask2.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Lesson8/HomeTask3.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Lesson8/HomeTask4.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Lesson8/Main.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Lesson8/keyboard.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Lesson9/MyFileTXT.java" beforeDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
